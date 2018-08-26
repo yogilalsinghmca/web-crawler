@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/favicon1.png" />
+      <link rel="icon" type="image/png" href="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/favicon1.png">
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/js/html5shiv.js"></script>
+      <script src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/js/respond.min.js"></script>
+      <![endif]--><!--script type="javascript/text" defer>NProgress.start();</script-->
+      <link rel="profile" href="http://gmpg.org/xfn/11">
+      <link rel="pingback" href="https://intellipaat.com/blog/xmlrpc.php">
+      <link rel='stylesheet' id='theme-layout-css-css'  href='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/css/layout.css' type='text/css' media='all' />
+      <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+      <title>What is Scala Programming - A Comparison between Scala vs. Java</title>
+      <!-- This site is optimized with the Yoast SEO plugin v4.9 - https://yoast.com/wordpress/plugins/seo/ -->
+      <meta name="description" content="What is Scala Programming – Get to know about its definition, Scala framework, functional programming difference between scala and java. Also learn about its numerous advantages, future trends and job opportunities."/>
+      <meta name="keywords" content="scala training, scala online Training, What is Scala"/>
+      <link rel="canonical" href="https://intellipaat.com/blog/what-is-scala/" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="What is Scala Programming - A Comparison between Scala vs. Java" />
+      <meta property="og:description" content="What is Scala Programming – Get to know about its definition, Scala framework, functional programming difference between scala and java. Also learn about its numerous advantages, future trends and job opportunities." />
+      <meta property="og:url" content="https://intellipaat.com/blog/what-is-scala/" />
+      <meta property="og:site_name" content="Intellipaat Blog" />
+      <meta property="article:tag" content="Scala Online training" />
+      <meta property="article:tag" content="Scala Training" />
+      <meta property="article:tag" content="What is Scala" />
+      <meta property="article:section" content="Big Data" />
+      <meta property="article:published_time" content="2016-12-12T12:31:12+05:30" />
+      <meta property="article:modified_time" content="2018-06-02T17:05:10+05:30" />
+      <meta property="og:updated_time" content="2018-06-02T17:05:10+05:30" />
+      <meta property="og:image" content="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/SCALA.jpg" />
+      <meta property="og:image:width" content="700" />
+      <meta property="og:image:height" content="270" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="What is Scala Programming – Get to know about its definition, Scala framework, functional programming difference between scala and java. Also learn about its numerous advantages, future trends and job opportunities." />
+      <meta name="twitter:title" content="What is Scala Programming - A Comparison between Scala vs. Java" />
+      <meta name="twitter:image" content="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/SCALA.jpg" />
+      <!-- / Yoast SEO plugin. -->
+      <link rel='dns-prefetch' href='//s.w.org' />
+      <link rel="alternate" type="application/rss+xml" title="Intellipaat Blog &raquo; Feed" href="https://intellipaat.com/blog/feed/" />
+      <link rel="alternate" type="application/rss+xml" title="Intellipaat Blog &raquo; Comments Feed" href="https://intellipaat.com/blog/comments/feed/" />
+      <link rel="alternate" type="application/rss+xml" title="Intellipaat Blog &raquo; What is Scala Programming? Comments Feed" href="https://intellipaat.com/blog/what-is-scala/feed/" />
+      <script type="text/javascript">
+         window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/intellipaat.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js"}};
+         !function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+      </script>
+      <style type="text/css">
+         img.wp-smiley,
+         img.emoji {
+         display: inline !important;
+         border: none !important;
+         box-shadow: none !important;
+         height: 1em !important;
+         width: 1em !important;
+         margin: 0 .07em !important;
+         vertical-align: -0.1em !important;
+         background: none !important;
+         padding: 0 !important;
+         }
+      </style>
+      <link rel='stylesheet' id='contact-form-7-css'  href='https://cdn.intellipaat.com/blog/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-includes/js/jquery/jquery.js' defer='defer'></script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-includes/js/jquery/jquery-migrate.min.js' defer='defer'></script>
+      <link rel='https://api.w.org/' href='https://intellipaat.com/blog/wp-json/' />
+      <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://intellipaat.com/blog/xmlrpc.php?rsd" />
+      <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://intellipaat.com/blog/wp-includes/wlwmanifest.xml" />
+      <meta name="generator" content="WordPress 4.7.3" />
+      <link rel='shortlink' href='https://intellipaat.com/blog/?p=3537' />
+      <link rel="alternate" type="application/json+oembed" href="https://intellipaat.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fintellipaat.com%2Fblog%2Fwhat-is-scala%2F" />
+      <link rel="alternate" type="text/xml+oembed" href="https://intellipaat.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fintellipaat.com%2Fblog%2Fwhat-is-scala%2F&#038;format=xml" />
+      <meta property="og:title" content="What is Scala Programming?" />
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/SCALA.jpg" />
+      <meta property="og:url" content="https://intellipaat.com/blog/what-is-scala/" />
+      <meta property="og:description" content="Scala is one of the new languages that is based on the Java Virtual Machine" />
+      <meta property="og:site_name" content="Intellipaat Blog" />
+      <meta property="fb:page_id" content="281089281939813" />
+      <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0076/3902.js" async="async"></script>	<!--link rel='stylesheet' id='twitter_bootstrap-css'  href='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/css/bootstrap.css' type='text/css' media='all' />
+         <link rel='stylesheet' id='style-css-css'  href='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/css/style2.css' type='text/css' media='all' />
+         <link rel='stylesheet' id='theme-css-css'  href='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/style.css' type='text/css' media='all' />
+         <link rel='stylesheet' id='theme-css-css'  href='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/css/fontawesome.css' type='text/css' media='all' /-->
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-includes/js/jquery/jquery.js'></script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/js/bootstrap.min.js'></script>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-43601575-1', 'auto');
+         ga('send', 'pageview');
+         
+      </script>
+   </head>
+   <body class="post-template-default single single-post postid-3537 single-format-standard group-blog">
+      <div id="global" class="global">
+      <div class="pagesidebar">
+         <div class="sidebarcontent">
+            <div id="sidelogo">
+               <a href="https://intellipaat.com/blog/"><img src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/logo.png" alt="Intellipaat" /></a>
+            </div>
+         </div>
+      </div>
+      <div class="pusher pusher-new course_section_layout">
+      <div id="headertop" class="course_2">
+      <div id="header-fixed-scroll">
+         <!--<div class="container reduce">-->
+         <div class="container reduce">
+            <div class="row">
+               <div class="col-md-2 col-sm-3 col-xs-7 logo-course">
+                  <a href="https://intellipaat.com/" class="logo_link"><img src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/logo.png" alt="Intellipaat" style='' /></a>
+               </div>
+               <div class="col-md-6 col-sm-3 col-xs-7 course_2" id='topLogo'>
+                  <div class="fl" id='topBrowse'>
+                     <div id="browse_courses" class="cats-dropdown cats-toggle course-type2">
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                           <a href="#" class="white-link fl"><span class="nav-bars alignleft"><span class="nav-one"></span><span class="nav-two"></span><span class="nav-three"></span></span><span class="text fl">Browse Courses</span></a>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu_inner">
+                           <ul class="dropdown-menu-list">
+                              <li data-submenu-id="submenu-0" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Combo Offers" ><span>Combo Offers</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-0" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-1" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Big Data" ><span>Big Data</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-1" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-2" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Data Science" ><span>Data Science</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-2" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-3" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Business Intelligence" ><span>Business Intelligence</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-3" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-4" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Salesforce" ><span>Salesforce</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-4" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-5" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Cloud Computing" ><span>Cloud Computing</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-5" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-6" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Mobile Development" ><span>Mobile Development</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-6" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-7" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Digital Marketing" ><span>Digital Marketing</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-7" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-8" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="DataBase" ><span>DataBase</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-8" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-9" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Programming" ><span>Programming</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-9" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-10" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Testing" ><span>Testing</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-10" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-11" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Project Management" ><span>Project Management</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-11" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                              <li data-submenu-id="submenu-12" class="menu_innerpage">
+                                 <div class="main-cat menu-item" title="Website Development" ><span>Website Development</span><i class="fa fa-angle-right"></i></div>
+                                 <div id="submenu-12" class="dropdown-menu sub dropdown-menusub_inner" ></div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div id="sidr">
+                        <div class="parent">
+                           <ul>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Combo Offers" >Combo Offers<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/big-data-data-science-training/" title= "Big Data, Data Science Training" class="external" rel="nofollow" target="_blank">Big Data, Data Science Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/big-data-hadoop-training/" title= "Big Data & Hadoop" class="external" rel="nofollow" target="_blank">Big Data & Hadoop</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/tableau-desktop-server-training/" title= "Tableau Desktop & Server" class="external" rel="nofollow" target="_blank">Tableau Desktop & Server</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-with-hadoop-training/" title= "Data Science & Hadoop" class="external" rel="nofollow" target="_blank">Data Science & Hadoop</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-r-mahout-training/" title= "Data Science, R & Mahout" class="external" rel="nofollow" target="_blank">Data Science, R & Mahout</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/hadoop-1-spark-storm-scala-training/" title= "Hadoop, Spark, Storm & Scala" class="external" rel="nofollow" target="_blank">Hadoop, Spark, Storm & Scala</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/cognos-bi-tm1-insight-training/" title= "Cognos BI,TM1 & Insight" class="external" rel="nofollow" target="_blank">Cognos BI,TM1 & Insight</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Big Data" >Big Data (48)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/big-data-hadoop-training/" title= "Big Data and Hadoop" class="external" rel="nofollow" target="_blank">Big Data and Hadoop</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/apache-storm-spark-scala-training/" title= "Apache Spark, Scala, Storm" class="external" rel="nofollow" target="_blank">Apache Spark, Scala, Storm</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-r-mahout-training/" title= "Data Science, R & Mahout" class="external" rel="nofollow" target="_blank">Data Science, R & Mahout</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/nosql-cassandra-hbase-training/" title= "No-sql-Cassandra,Hbase & MongoDB" class="external" rel="nofollow" target="_blank">No-sql-Cassandra,Hbase & MongoDB</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/nosql-cassandra-hbase-training/" title= "No-sql Cassandra Hbase MongoDB..." class="external" rel="nofollow" target="_blank">No-sql Cassandra Hbase MongoDB...</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-statistics-probability-training/" title= "Data Science, Statistics and Probability" class="external" rel="nofollow" target="_blank">Data Science, Statistics and Probability</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/solr-training/" title= "Solr" class="external" rel="nofollow" target="_blank">Solr</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Data Science" >Data Science (11)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-r-mahout-training/" title= "Data Science, R & Mahout" class="external" rel="nofollow" target="_blank">Data Science, R & Mahout</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-statistics-probability-training/" title= "Data Science, Statistics & Probability" class="external" rel="nofollow" target="_blank">Data Science, Statistics & Probability</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-with-hadoop-training/" title= "Data Science and Hadoop" class="external" rel="nofollow" target="_blank">Data Science and Hadoop</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-science-python-training/" title= "Data Science with Python" class="external" rel="nofollow" target="_blank">Data Science with Python</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/data-scientist-course-training/" title= "Data Scientist" class="external" rel="nofollow" target="_blank">Data Scientist</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/r-programming-certification-training/" title= "R Programming Certification" class="external" rel="nofollow" target="_blank">R Programming Certification</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/sas-training/" title= "SAS" class="external" rel="nofollow" target="_blank">SAS</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Business Intelligence" >Business Intelligence (43)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/bi-reporting-tools-training/" title= "BI Reporting Tools Master Prog." class="external" rel="nofollow" target="_blank">BI Reporting Tools Master Prog.</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/etl-tool-training/" title= "ETL Tools Master Program" class="external" rel="nofollow" target="_blank">ETL Tools Master Program</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/tableau-desktop-server-training/" title= "Tableau Desktop & Server" class="external" rel="nofollow" target="_blank">Tableau Desktop & Server</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/informatica-online-training-certification/" title= "Informatica" class="external" rel="nofollow" target="_blank">Informatica</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/qlikview-tableau-spotfire-training/" title= "Qlikview, Tableau & Spotfire" class="external" rel="nofollow" target="_blank">Qlikview, Tableau & Spotfire</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/sap-bi-combo-pack/" title= "SAP - All in 1 BI Combo" class="external" rel="nofollow" target="_blank">SAP - All in 1 BI Combo</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/cognos-bi-tm1-insight-training/" title= "Cognos BI, TM1, Insight Training" class="external" rel="nofollow" target="_blank">Cognos BI, TM1, Insight Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/msbi-online-training-course/" title= "MSBI" class="external" rel="nofollow" target="_blank">MSBI</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Salesforce" >Salesforce (2)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/salesforce-training/" title= "Salesforce 201,401 & 501 Certification" class="external" rel="nofollow" target="_blank">Salesforce 201,401 & 501 Certification</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/salesforce-developer-training/" title= "Salesforce 501 Certification" class="external" rel="nofollow" target="_blank">Salesforce 501 Certification</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Cloud Computing" >Cloud Computing (3)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/openstack-training/" title= "Openstack" class="external" rel="nofollow" target="_blank">Openstack</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/comptia-cloud-essentials-certification-exam-objectives-clo-001-training/" title= "CompTIA Cloud Essentials Certification" class="external" rel="nofollow" target="_blank">CompTIA Cloud Essentials Certification</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/aws-certification-training-online/" title= "AWS Certification" class="external" rel="nofollow" target="_blank">AWS Certification</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Mobile Development" >Mobile Development (2)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/ios-training/" title= "IOS Development" class="external" rel="nofollow" target="_blank">IOS Development</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/android-training/" title= "Android" class="external" rel="nofollow" target="_blank">Android</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Digital Marketing" >Digital Marketing (5)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/seo-smm-google-analytics-training/" title= "SEO, SMM & Google Analytics" class="external" rel="nofollow" target="_blank">SEO, SMM & Google Analytics</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/search-engine-optimization-training/" title= "Search Engine Optimization" class="external" rel="nofollow" target="_blank">Search Engine Optimization</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/social-media-marketing-training/" title= "Social Media Marketing" class="external" rel="nofollow" target="_blank">Social Media Marketing</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/google-analytics-training/" title= "Google Analytics" class="external" rel="nofollow" target="_blank">Google Analytics</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/sem-training/" title= "Search Engine Marketing (SEM)" class="external" rel="nofollow" target="_blank">Search Engine Marketing (SEM)</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="DataBase" >DataBase (8)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/database-architect-training/" title= "Database Architect Program" class="external" rel="nofollow" target="_blank">Database Architect Program</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/oracle-pl-sql-dba-training/" title= "Oracle PL-SQL & DBA Course" class="external" rel="nofollow" target="_blank">Oracle PL-SQL & DBA Course</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/sql-developer-dba-training/" title= "MS SQL Developer & DBA Course" class="external" rel="nofollow" target="_blank">MS SQL Developer & DBA Course</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/pl-sql-online-training/" title= "Oracle PL/SQL" class="external" rel="nofollow" target="_blank">Oracle PL/SQL</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/oracle-dba-training/" title= "Oracle DBA Training" class="external" rel="nofollow" target="_blank">Oracle DBA Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/sql-training-certification-course/" title= "MS SQL Certification" class="external" rel="nofollow" target="_blank">MS SQL Certification</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/sql-server-dba-training/" title= "MS SQL Server DBA Training" class="external" rel="nofollow" target="_blank">MS SQL Server DBA Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/msbi-sql-training/" title= "MSBI & SQL Course" class="external" rel="nofollow" target="_blank">MSBI & SQL Course</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Programming" >Programming (13)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/jbpm-drools-soa-training/" title= "JBPM, Drools & SOA" class="external" rel="nofollow" target="_blank">JBPM, Drools & SOA</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/php-mysql-html-jquery-training/" title= "PHP, MySQL, HTML & jQuery" class="external" rel="nofollow" target="_blank">PHP, MySQL, HTML & jQuery</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/python-certification-training-online/" title= "Python Certification" class="external" rel="nofollow" target="_blank">Python Certification</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/java-training/" title= "Java" class="external" rel="nofollow" target="_blank">Java</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/jbpm-drools-training/" title= "JBPM and Drools" class="external" rel="nofollow" target="_blank">JBPM and Drools</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/html-jquery-training/" title= "HTML and jQuery" class="external" rel="nofollow" target="_blank">HTML and jQuery</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/php-mysql-training/" title= "PHP and MySQL" class="external" rel="nofollow" target="_blank">PHP and MySQL</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/angularjs-training/" title= "AngularJS" class="external" rel="nofollow" target="_blank">AngularJS</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/linux-training/" title= "Linux" class="external" rel="nofollow" target="_blank">Linux</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Testing" >Testing (5)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/testing-training-etl-selenium-software-hadoop/" title= "Testing Masters Program" class="external" rel="nofollow" target="_blank">Testing Masters Program</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/hadoop-testing-training/" title= "Hadoop Testing" class="external" rel="nofollow" target="_blank">Hadoop Testing</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/selenium-training/" title= "Selenium Web Driver" class="external" rel="nofollow" target="_blank">Selenium Web Driver</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/software-testing-training-course/" title= "Software Testing Course" class="external" rel="nofollow" target="_blank">Software Testing Course</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/etl-testing-online-training/" title= "ETL Testing Course" class="external" rel="nofollow" target="_blank">ETL Testing Course</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Project Management" >Project Management (9)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/pmp-training/" title= "PMP" class="external" rel="nofollow" target="_blank">PMP</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/scrum-master-agile-training/" title= "Agile Training" class="external" rel="nofollow" target="_blank">Agile Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/excel-training/" title= "Excel Training" class="external" rel="nofollow" target="_blank">Excel Training</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="sidr-first-level">
+                                 <a href="javascript:void(0)" title="Website Development" >Website Development (5)<i class="fa fa-angle-right"></i></a>
+                                 <ul class="sidr-second-level">
+                                    <li class="sidr-level-header"><a href="#" class="sidr-level-back"><span><i class="fa fa-chevron-left fa-1x"></i></span>Menu</a></li>
+                                    <li>
+                                       <a href="https://intellipaat.com/php-mysql-html-jquery-training/" title= "Web Development Master Program" class="external" rel="nofollow" target="_blank">Web Development Master Program</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/wordpress-training/" title= "Wordpress" class="external" rel="nofollow" target="_blank">Wordpress</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/angularjs-training/" title= "AngularJS" class="external" rel="nofollow" target="_blank">AngularJS</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/php-mysql-training/" title= "PHP and MySQL" class="external" rel="nofollow" target="_blank">PHP and MySQL</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/html-jquery-training/" title= "HTML and jQuery" class="external" rel="nofollow" target="_blank">HTML and jQuery</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                           <a href="/all-courses" class="all-courses">All Courses</a><a href="/resources" class="resources">Resources</a>
+                        </div>
+                     </div>
+                     <a href="javascript:void(0)" class="tclose">X</a>
+                  </div>
+                  <!--form role="search" method="get" class="search-form" action="https://intellipaat.com/blog/">
+                     <label>
+                     	<span class="screen-reader-text">Search for:</span>
+                     	<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+                     </label>
+                     <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+                     </form-->
+                  <div id="searchbox" class="fl">
+                     <form role="search" method="get" id="search-form" action="https://intellipaat.com/blog/">
+                        <div>
+                           <button type="submit" role="submit"><i class="fa fa-search"></i></button>
+                           <input type="text" value="" name="s" id="s" placeholder="Search Articles" />
+                           <!--input type="hidden" value="course" name="post_type" /-->                                      
+                        </div>
+                     </form>
+                     <a href="#" class="close-icon"><img src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/search-close-icon.png" /></a>
+                  </div>
+               </div>
+               <div class="col-md-2 col-sm-3 col-xs-7 logo-mobile-course">
+                  <a href="https://intellipaat.com/blog/" class="logo_link"><img src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/logo.png" alt="Intellipaat" style='' /></a>
+               </div>
+               <div class="top-navigation col-md-4 col-sm-6 col-xs-5  pull-right">
+                  <div class="trigger fr hidden-md hidden-lg hidden-xs">                        	              
+                     <a id="trigger">
+                     <span class="lines"></span>
+                     </a>
+                  </div>
+                  <ul id="menu-course-new-top-menu" class="topmenu">
+                     <li id="menu-item-48327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48327"><a href="https://intellipaat.com/become-instructor/" target="_blank">Become a Trainer</a></li>
+                     <li id="menu-item-48333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48333"><a href="https://intellipaat.com/all-courses/" target="_blank">All Courses</a></li>
+                     <li><a href="https://intellipaat.com/login/" target="_blank">Login</a></li>
+                     <!--li class="hidden-xs"><a href="#login" class="smallimg iplogin">Login</a></li--><!--li class="menu-item woo-cart-menu empty"><a class="wcmenucart-contents external" href="https://lrningpace.com/all-courses/" title="Start shopping" rel="nofollow"><i class="icon-shopping-cart"></i> <span class="cart_count">0</span></a></li--->
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div id="homepopsearch" class="hidden-xs hidden-xm">
+            <!--div id="srchtxt" class="container">Popular Searches <span id="arr">&rarr;</span> Hadoop<span>|</span>Tableau<span>|</span>Pentaho<span>|</span>Cassandra<span>|</span>Python<span>|</span>Splunk</div-->
+            <div id="srchtxt" class="padd container">
+               <ul id="inner-top-menu">
+                  <li>
+                     <a href="https://intellipaat.com/blog/" target="_blank">
+                        <div class="globe"></div>
+                        Read Blog
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://intellipaat.com/interview-questions/" target="_blank">
+                        <div class="iq"></div>
+                        Interview Questions
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://intellipaat.com/tutorials/" target="_blank">
+                        <div class="tutorials"></div>
+                        Tutorials
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://intellipaat.com/blog/category/success-stories/" target="_blank">
+                        <div class="success-stories tutorials"></div>
+                        Success Stories
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="bc" class="hidden-xs hidden-xm">
+            <div id="srchtxt" class="padd container">
+               <ul id="breadcrumbs" class="breadcrumbs">
+                  <li class="item-home"><a class="bread-link bread-home" href="https://intellipaat.com/" title="Blog">Intellipaat</a></li>
+                  <li class="separator separator-home"> <i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                  <li class="item-home"><a class="bread-link bread-home" href="https://intellipaat.com/blog" title="Blog">Blog</a></li>
+                  <li class="separator separator-home"> <i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                  <li class="item-cat"><a href="https://intellipaat.com/blog/category/big-data/">Big Data</a></li>
+                  <li class="separator"> <i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                  <li class="item-current item-3537">What is Scala Programming?</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Fixed Scroll -->
+      <style>
+         #post-img img {
+         height: auto;
+         }
+         .reduce {
+         width: auto;
+         }
+         #featured-post-container {
+         height: auto;
+         margin-bottom: auto;
+         }
+         .success-stories.tutorials{
+         background-position: -162px -5px;
+         }
+         .success-stories.tutorials:hover {
+         background-position: -162px -38px;
+         }
+      </style>
+      <div id="blogwrapper" class="container reduce">
+         <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="rowsingle">
+                     <section id="blogmain">
+                        <article id="post-3537" class="post-3537 post type-post status-publish format-standard has-post-thumbnail hentry category-big-data tag-scala-online-training tag-scala-training tag-what-is-scala">
+                           <header class="entry-header">
+                              <h1 class="entry-title">What is Scala Programming?</h1>
+                              <h2 class="small_desc_heading">Scala is a high-level programming language which is a combination of object-oriented programming and functional programming. It is highly scalable which is why it is called Scala.</h2>
+                           </header>
+                           <!-- .entry-header -->
+                           <div id="post-img"><img class="wp-post-image" src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/SCALA.jpg" alt="What is Scala Programming?" title="What is Scala Programming?" /></div>
+                           <div id="author-info">
+                              <div class="author-info col-md-12">
+                                 <div class="row">
+                                    <div class="author-avatar col-md-1 rpadd">
+                                       <div class="row">
+                                       </div>
+                                    </div>
+                                    <!-- .author-avatar -->
+                                    <div class="author-description col-md-10">
+                                       <div class="row">
+                                          <div class="author-bio col-md-12">
+                                             <div class="row">
+                                                <div class="col-md-1">
+                                                   <div class="row"></div>
+                                                </div>
+                                                <div class="col-md-1">
+                                                   <div class="row"></div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                   <div class="row pull-right">
+                                                      <span>
+                                                      June 02, 2018								</span>&nbsp;&nbsp;&nbsp;
+                                                      <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;4674 Views&nbsp;&nbsp;&nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;3 Comments
+                                                      <div id="social">
+                                                         <a target="_blank" title="What is Scala Programming?" href="https://www.facebook.com/sharer/sharer.php?u=https://intellipaat.com/blog/what-is-scala/" class="external" rel="nofollow"><i class="fa fa-facebook circle"></i></a>
+                                                         <a target="_blank" title="What is Scala Programming?" href="https://twitter.com/home?status=https://intellipaat.com/blog/what-is-scala/" class="external" rel="nofollow"><i class="fa fa-twitter circle"></i></a>
+                                                         <a target="_blank" title="What is Scala Programming?" href="https://plus.google.com/share?url=https://intellipaat.com/blog/what-is-scala/" class="external" rel="nofollow"><i class="fa fa-google-plus-official"></i></a>
+                                                         <a target="_blank" title="What is Scala Programming?" href="https://www.linkedin.com/shareArticle?mini=true&url=https://intellipaat.com/blog/what-is-scala/"><i class="fa fa-linkedin circle"></i></a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- .author-bio -->
+                                       </div>
+                                    </div>
+                                    <!-- .author-description -->
+                                 </div>
+                              </div>
+                              <!-- .author-info -->
+                           </div>
+                           <div class="entry-content col-md-12">
+                              <div class="row">
+                                 <p>Scala is one of the new languages that is based on the Java Virtual Machine compatibility. It has a lot of similarities and differences as compared to the Java programming language. Scala is slowly finding a lot of acceptance among developers around the world due to its certain inherent strengths. One of the best resemblances of Scala to Java is that you can code Scala just the same way that you code Java. It is also possible to use a lot of the Java libraries within Scala along with many of the third party libraries as well.<br />
+                                 <div class='cta-container'>
+                                    <div class='row' id='pdfinline-1'>
+                                       <div class='col-sm-9'>
+                                          <h2>
+                                          Learn Scala in 24 hrs. Download e-book now 
+                                          <h2>
+                                       </div>
+                                       <div class='col-sm-3'>
+                                          <a class='cta-a'>
+                                          Download
+                                          </a>
+                                       </div>
+                                       <div role="form" class="wpcf7" id="wpcf7-f61233-p3537-o1" lang="en-US" dir="ltr">
+                                          <div class="screen-reader-response"></div>
+                                          <form action="/blog/what-is-scala/#wpcf7-f61233-p3537-o1" method="post" class="wpcf7-form model" novalidate="novalidate" id="model">
+                                             <div style="display: none;">
+                                                <input type="hidden" name="_wpcf7" value="61233" />
+                                                <input type="hidden" name="_wpcf7_version" value="4.2.2" />
+                                                <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f61233-p3537-o1" />
+                                                <input type="hidden" name="_wpnonce" value="7cb5e200f5" />
+                                             </div>
+                                             <div>
+                                                <p class="pdfmodalclose">X</p>
+                                             </div>
+                                             <div class="iq_pdf_report clearfix">
+                                                <p class="toaddafter"></p>
+                                                <p>
+                                                   <span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" /></span><span class="wpcf7-form-control-wrap phone"><input type="number" name="phone" value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number" aria-required="true" aria-invalid="false" placeholder="Phone" /></span><input type="hidden" id="pdfreport" name="pdfreport"/><input type="hidden" id="submitlinkPDF" name="linksubmitPDF" value="url" />
+                                                   <span class="wpcf7-form-control-wrap country">
+                                                      <select name="country" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required country form_field" id="country" aria-required="true" aria-invalid="false">
+                                                         <option value="Afghanistan">Afghanistan</option>
+                                                         <option value="Albania">Albania</option>
+                                                         <option value="Algeria">Algeria</option>
+                                                         <option value="American Samoa">American Samoa</option>
+                                                         <option value="Andorra">Andorra</option>
+                                                         <option value="Angola">Angola</option>
+                                                         <option value="Anguilla">Anguilla</option>
+                                                         <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                                         <option value="Argentina">Argentina</option>
+                                                         <option value="Armenia">Armenia</option>
+                                                         <option value="Aruba">Aruba</option>
+                                                         <option value="Australia">Australia</option>
+                                                         <option value="Austria">Austria</option>
+                                                         <option value="Azerbaijan">Azerbaijan</option>
+                                                         <option value="Bahamas">Bahamas</option>
+                                                         <option value="Bahrain">Bahrain</option>
+                                                         <option value="Bangladesh">Bangladesh</option>
+                                                         <option value="Barbados">Barbados</option>
+                                                         <option value="Belarus">Belarus</option>
+                                                         <option value="Belgium">Belgium</option>
+                                                         <option value="Belize">Belize</option>
+                                                         <option value="Benin">Benin</option>
+                                                         <option value="Bermuda">Bermuda</option>
+                                                         <option value="Bhutan">Bhutan</option>
+                                                         <option value="Bolivia">Bolivia</option>
+                                                         <option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
+                                                         <option value="Botswana">Botswana</option>
+                                                         <option value="Bouvet Island">Bouvet Island</option>
+                                                         <option value="Brazil">Brazil</option>
+                                                         <option value="Brunei">Brunei</option>
+                                                         <option value="Bulgaria">Bulgaria</option>
+                                                         <option value="Burkina Faso">Burkina Faso</option>
+                                                         <option value="Burundi">Burundi</option>
+                                                         <option value="Cambodia">Cambodia</option>
+                                                         <option value="Cameroon">Cameroon</option>
+                                                         <option value="Canada">Canada</option>
+                                                         <option value="Cape Verde">Cape Verde</option>
+                                                         <option value="Cayman Islands">Cayman Islands</option>
+                                                         <option value="Central African Republic">Central African Republic</option>
+                                                         <option value="Chad">Chad</option>
+                                                         <option value="Chile">Chile</option>
+                                                         <option value="China">China</option>
+                                                         <option value="Christmas Island">Christmas Island</option>
+                                                         <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                                         <option value="Colombia">Colombia</option>
+                                                         <option value="Comoros">Comoros</option>
+                                                         <option value="Congo, Democratic Republic of the (Zaire)">Congo, Democratic Republic of the (Zaire)</option>
+                                                         <option value="Congo, Republic of">Congo, Republic of</option>
+                                                         <option value="Cook Islands">Cook Islands</option>
+                                                         <option value="Costa Rica">Costa Rica</option>
+                                                         <option value="Croatia">Croatia</option>
+                                                         <option value="Cuba">Cuba</option>
+                                                         <option value="Cyprus">Cyprus</option>
+                                                         <option value="Czech Republic">Czech Republic</option>
+                                                         <option value="Denmark">Denmark</option>
+                                                         <option value="Djibouti">Djibouti</option>
+                                                         <option value="Dominica">Dominica</option>
+                                                         <option value="Dominican Republic">Dominican Republic</option>
+                                                         <option value="Ecuador">Ecuador</option>
+                                                         <option value="Egypt">Egypt</option>
+                                                         <option value="El Salvador">El Salvador</option>
+                                                         <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                                         <option value="Eritrea">Eritrea</option>
+                                                         <option value="Estonia">Estonia</option>
+                                                         <option value="Ethiopia">Ethiopia</option>
+                                                         <option value="Falkland Islands">Falkland Islands</option>
+                                                         <option value="Faroe Islands">Faroe Islands</option>
+                                                         <option value="Fiji">Fiji</option>
+                                                         <option value="Finland">Finland</option>
+                                                         <option value="France">France</option>
+                                                         <option value="French Guiana">French Guiana</option>
+                                                         <option value="Gabon">Gabon</option>
+                                                         <option value="Gambia">Gambia</option>
+                                                         <option value="Georgia">Georgia</option>
+                                                         <option value="Germany">Germany</option>
+                                                         <option value="Ghana">Ghana</option>
+                                                         <option value="Gibraltar">Gibraltar</option>
+                                                         <option value="Greece">Greece</option>
+                                                         <option value="Greenland">Greenland</option>
+                                                         <option value="Grenada">Grenada</option>
+                                                         <option value="Guadeloupe (French)">Guadeloupe (French)</option>
+                                                         <option value="Guam (USA)">Guam (USA)</option>
+                                                         <option value="Guatemala">Guatemala</option>
+                                                         <option value="Guinea">Guinea</option>
+                                                         <option value="Guinea Bissau">Guinea Bissau</option>
+                                                         <option value="Guyana">Guyana</option>
+                                                         <option value="Haiti">Haiti</option>
+                                                         <option value="Holy See">Holy See</option>
+                                                         <option value="Honduras">Honduras</option>
+                                                         <option value="Hong Kong">Hong Kong</option>
+                                                         <option value="Hungary">Hungary</option>
+                                                         <option value="Iceland">Iceland</option>
+                                                         <option value="India">India</option>
+                                                         <option value="Indonesia">Indonesia</option>
+                                                         <option value="Iran">Iran</option>
+                                                         <option value="Iraq">Iraq</option>
+                                                         <option value="Ireland">Ireland</option>
+                                                         <option value="Israel">Israel</option>
+                                                         <option value="Italy">Italy</option>
+                                                         <option value="Ivory Coast (Cote D`Ivoire)">Ivory Coast (Cote D`Ivoire)</option>
+                                                         <option value="Jamaica">Jamaica</option>
+                                                         <option value="Japan">Japan</option>
+                                                         <option value="Jordan">Jordan</option>
+                                                         <option value="Kazakhstan">Kazakhstan</option>
+                                                         <option value="Kenya">Kenya</option>
+                                                         <option value="Kiribati">Kiribati</option>
+                                                         <option value="Kuwait">Kuwait</option>
+                                                         <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                         <option value="Laos">Laos</option>
+                                                         <option value="Latvia">Latvia</option>
+                                                         <option value="Lebanon">Lebanon</option>
+                                                         <option value="Lesotho">Lesotho</option>
+                                                         <option value="Liberia">Liberia</option>
+                                                         <option value="Libya">Libya</option>
+                                                         <option value="Liechtenstein">Liechtenstein</option>
+                                                         <option value="Lithuania">Lithuania</option>
+                                                         <option value="Luxembourg">Luxembourg</option>
+                                                         <option value="Macau">Macau</option>
+                                                         <option value="Macedonia">Macedonia</option>
+                                                         <option value="Madagascar">Madagascar</option>
+                                                         <option value="Malawi">Malawi</option>
+                                                         <option value="Malaysia">Malaysia</option>
+                                                         <option value="Maldives">Maldives</option>
+                                                         <option value="Mali">Mali</option>
+                                                         <option value="Malta">Malta</option>
+                                                         <option value="Marshall Islands">Marshall Islands</option>
+                                                         <option value="Martinique (French)">Martinique (French)</option>
+                                                         <option value="Mauritania">Mauritania</option>
+                                                         <option value="Mauritius">Mauritius</option>
+                                                         <option value="Mayotte">Mayotte</option>
+                                                         <option value="Mexico">Mexico</option>
+                                                         <option value="Micronesia">Micronesia</option>
+                                                         <option value="Moldova">Moldova</option>
+                                                         <option value="Monaco">Monaco</option>
+                                                         <option value="Mongolia">Mongolia</option>
+                                                         <option value="Montenegro">Montenegro</option>
+                                                         <option value="Montserrat">Montserrat</option>
+                                                         <option value="Morocco">Morocco</option>
+                                                         <option value="Mozambique">Mozambique</option>
+                                                         <option value="Myanmar">Myanmar</option>
+                                                         <option value="Namibia">Namibia</option>
+                                                         <option value="Nauru">Nauru</option>
+                                                         <option value="Nepal">Nepal</option>
+                                                         <option value="Netherlands">Netherlands</option>
+                                                         <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                                         <option value="New Caledonia (French)">New Caledonia (French)</option>
+                                                         <option value="New Zealand">New Zealand</option>
+                                                         <option value="Nicaragua">Nicaragua</option>
+                                                         <option value="Niger">Niger</option>
+                                                         <option value="Nigeria">Nigeria</option>
+                                                         <option value="Niue">Niue</option>
+                                                         <option value="Norfolk Island">Norfolk Island</option>
+                                                         <option value="North Korea">North Korea</option>
+                                                         <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                                         <option value="Norway">Norway</option>
+                                                         <option value="Oman">Oman</option>
+                                                         <option value="Pakistan">Pakistan</option>
+                                                         <option value="Palau">Palau</option>
+                                                         <option value="Panama">Panama</option>
+                                                         <option value="Papua New Guinea">Papua New Guinea</option>
+                                                         <option value="Paraguay">Paraguay</option>
+                                                         <option value="Peru">Peru</option>
+                                                         <option value="Philippines">Philippines</option>
+                                                         <option value="Pitcairn Island">Pitcairn Island</option>
+                                                         <option value="Poland">Poland</option>
+                                                         <option value="Polynesia (French)">Polynesia (French)</option>
+                                                         <option value="Portugal">Portugal</option>
+                                                         <option value="Puerto Rico">Puerto Rico</option>
+                                                         <option value="Qatar">Qatar</option>
+                                                         <option value="Reunion">Reunion</option>
+                                                         <option value="Romania">Romania</option>
+                                                         <option value="Russia">Russia</option>
+                                                         <option value="Rwanda">Rwanda</option>
+                                                         <option value="Saint Helena">Saint Helena</option>
+                                                         <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                                         <option value="Saint Lucia">Saint Lucia</option>
+                                                         <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                                         <option value="Saint Vincent and Grenadines">Saint Vincent and Grenadines</option>
+                                                         <option value="Samoa">Samoa</option>
+                                                         <option value="San Marino">San Marino</option>
+                                                         <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                                         <option value="Saudi Arabia">Saudi Arabia</option>
+                                                         <option value="Senegal">Senegal</option>
+                                                         <option value="Serbia">Serbia</option>
+                                                         <option value="Seychelles">Seychelles</option>
+                                                         <option value="Sierra Leone">Sierra Leone</option>
+                                                         <option value="Singapore">Singapore</option>
+                                                         <option value="Slovakia">Slovakia</option>
+                                                         <option value="Slovenia">Slovenia</option>
+                                                         <option value="Solomon Islands">Solomon Islands</option>
+                                                         <option value="Somalia">Somalia</option>
+                                                         <option value="South Africa">South Africa</option>
+                                                         <option value="South Georgia and South Sandwich Islands">South Georgia and South Sandwich Islands</option>
+                                                         <option value="South Korea">South Korea</option>
+                                                         <option value="South Sudan">South Sudan</option>
+                                                         <option value="Spain">Spain</option>
+                                                         <option value="Sri Lanka">Sri Lanka</option>
+                                                         <option value="Sudan">Sudan</option>
+                                                         <option value="Suriname">Suriname</option>
+                                                         <option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+                                                         <option value="Swaziland">Swaziland</option>
+                                                         <option value="Sweden">Sweden</option>
+                                                         <option value="Switzerland">Switzerland</option>
+                                                         <option value="Syria">Syria</option>
+                                                         <option value="Taiwan">Taiwan</option>
+                                                         <option value="Tajikistan">Tajikistan</option>
+                                                         <option value="Tanzania">Tanzania</option>
+                                                         <option value="Thailand">Thailand</option>
+                                                         <option value="Timor-Leste (East Timor)">Timor-Leste (East Timor)</option>
+                                                         <option value="Togo">Togo</option>
+                                                         <option value="Tokelau">Tokelau</option>
+                                                         <option value="Tonga">Tonga</option>
+                                                         <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                                         <option value="Tunisia">Tunisia</option>
+                                                         <option value="Turkey">Turkey</option>
+                                                         <option value="Turkmenistan">Turkmenistan</option>
+                                                         <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                                         <option value="Tuvalu">Tuvalu</option>
+                                                         <option value="Uganda">Uganda</option>
+                                                         <option value="Ukraine">Ukraine</option>
+                                                         <option value="United Arab Emirates">United Arab Emirates</option>
+                                                         <option value="United Kingdom">United Kingdom</option>
+                                                         <option value="United States">United States</option>
+                                                         <option value="Uruguay">Uruguay</option>
+                                                         <option value="Uzbekistan">Uzbekistan</option>
+                                                         <option value="Vanuatu">Vanuatu</option>
+                                                         <option value="Venezuela">Venezuela</option>
+                                                         <option value="Vietnam">Vietnam</option>
+                                                         <option value="Virgin Islands">Virgin Islands</option>
+                                                         <option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+                                                         <option value="Yemen">Yemen</option>
+                                                         <option value="Zambia">Zambia</option>
+                                                         <option value="Zimbabwe">Zimbabwe</option>
+                                                      </select>
+                                                   </span>
+                                                <p><input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit" /></p>
+                                                <p>
+                                                   <script>jQuery("#country").prepend("<option value=''>Country</option>").val('');</script>
+                                             </div>
+                                             <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                 </style>
+                                 <script>
+                                    jQuery("#pdfinline-1 .cta-a").on("click",function(e) {
+                                    	jQuery("#pdfinline-1 .wpcf7").css("display","block");
+                                    	jQuery("#pdfinline-1 .wpcf7 #model").css("display","block");
+                                    	jQuery("#pdfinline-1 .wpcf7 .iq_pdf_report").css("display","block");
+                                    	jQuery("#pdfinline-1 #pdfreport").removeAttr("id");
+                                    	jQuery("#pdfinline-1 input[name=pdfreport]").attr("id","pdfreport-1");
+                                    	jQuery("#pdfinline-1 input#pdfreport-1").attr("value","ebook");
+                                    	jQuery("#pdfinline-1 input#submitlinkPDF").removeAttr("id");
+                                    	jQuery("#pdfinline-1 input[name=linksubmitPDF]").attr("id","submitlinkPDF-1");
+                                    	jQuery("#pdfinline-1 input#submitlinkPDF-1").attr("value","https://intellipaat.com/blog/what-is-scala/");
+                                    	jQuery("#pdfinline-1 h3").remove();
+                                    	jQuery("<h3>Enter your details</h3>").insertAfter("#pdfinline-1 .iq_pdf_report p.toaddafter");
+                                    	jQuery("#pdfinline-1 select#country").prepend("<option value=''>Country</option>").val('');
+                                    	jQuery("#pdfinline-1 form input[type=submit]").attr("value", " Download ");
+                                    });
+                                    jQuery("#model .pdfmodalclose").on("click", function(){
+                                    	jQuery("#pdfinline-1 .wpcf7").css("display","none");
+                                    });
+                                 </script> </p>
+                                 <h2><strong>Scala Programming</strong></h2>
+                                 <p><img class="size-full wp-image-63464 aligncenter" src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/Scala-Programming-Training-1.png" alt="Scala Programming Training" width="800" height="270" srcset="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/Scala-Programming-Training-1.png 800w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/Scala-Programming-Training-1-768x259.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+                                 <p>Scala programming is a general-purpose computer language that extensively supports the object oriented, and functional style of programming. Scala language is a strong static type of programming language. Scala is influenced by the Java programming language.</p>
+                                 <p>Scala is very versatile in the sense that it can be used for writing any type of applications like web application, desktop application, mobile application, enterprise application and so on.</p>
+                                 <p><strong>Some of the ways in which Scala language is deployed in real world scenarios is as follows :</strong></p>
+                                 <ul>
+                                    <li>Writing web applications</li>
+                                    <li>Applications working with streaming data</li>
+                                    <li>Distributed applications</li>
+                                    <li>Parallel batch processing</li>
+                                    <li>Analyzing data with Apache Spark</li>
+                                 </ul>
+                                 <p>Some of the benefits of Scala is that it takes less time to code as compared to Java which needs more lines of code. Scala also has the benefit of strong tools and APIs that can be used for creating various applications.</p>
+                                 <p><strong>Sample Scala Program</strong></p>
+                                 <p>&#8220;Hello World&#8221; example</p>
+                                 <p>object HelloWorld extends App</p>
+                                 <p>{</p>
+                                 <p>println(&#8220;Hello, World!&#8221;)</p>
+                                 <p>}</p>
+                                 <h2><strong>Meaning of Scala js</strong></h2>
+                                 <p>The Scala.js is a compiler that is equal to the JavaScript code and it compiles the Scala source code. This way it is possible to write the Scala code that can be run in a web browser or any other environment where there is a support for JavaScript.</p>
+                                 <h2><strong>Definition of Scala list</strong></h2>
+                                 <p>The Scala List is a stored order element. It consists of a class of immutable linked list and this class is follows the norm of List in First out (LIFO). It access pattern is stack-like pattern. When  it comes to the Scala List there are duplicate elements and it always maintains the order of the elements.</p>
+                                 <h2><strong>Why do we need Scala?</strong></h2>
+                                 <p><img class="size-full wp-image-63459 aligncenter" src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/Why-do-we-need-Scala.png" alt="Why do we need Scala?" width="800" height="270" srcset="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/Why-do-we-need-Scala.png 800w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/Why-do-we-need-Scala-768x259.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+                                 <p>In this comprehensive Scala Tutorial you will learn that Scala is a powerful language that exhibits both the properties of object oriented programming and functional programming. There are a lot of advantages of Scala that makes it one of the best languages for working with big data and real-time analytical applications.</p>
+                                 <p class="clearfix single-interview-question" style="text-align: justify;"><a class="interview-button" style="color: #fff !important;" href="https://intellipaat.com/apache-spark-scala-training/">Wish to Learn Scala? Click Here</a></p>
+                                 <h2><strong>Some of Scala advantages include :</strong></h2>
+                                 <ul>
+                                    <li>Your code is more concise, readable and error-free</li>
+                                    <li>It is easy to write, compile, debug and run the program</li>
+                                    <li>Functional programming lets you approach same problem through different angle</li>
+                                    <li>Deploy concurrency which helps in parallelizing the tasks</li>
+                                    <li>You can utilize a lot of third-party libraries for specific tasks</li>
+                                 </ul>
+                                 <div style="margin-top: 50px;">
+                                    <h2><strong>Functional Programming in Scala</strong></h2>
+                                    <p>As everyone knows that Scala is a functional programming language we need to understand the intricacies of a functional programming language. One of the main aspects of a functional programming language is that there is a big emphasis on the functions that are not dependent on the program state. One of the advantages of functional programming is that the code is easier to test and reuse, the parallelization becomes simpler, and there are lesser bugs in the whole program. In the functional programming style each of the programs is broken down into multiple chunks and each one can be processes in parallel thus speeding up the process and also improving the efficiency.</p>
+                                    <h2><strong>What is Scala Seq?</strong></h2>
+                                    <p>Scala Seq or Scala sequence is a quality that signifies the indexed sequencing in Scala and which is immutable. With the help of the index, each element can be easily accessed. The order in which the element is inserted is maintained. We can see the Scala seq as a type of iterative collections that have a defined element order. The indices can range anywhere between zero to the length of the sequence. In order to find the occurrence of an element the sequence supports various methods like indexWhere, startsWith, endsWith, prefixLength and so on.</p>
+                                    <p>There are a lot of other features of Scala that can be used wherein the various aspects of this technology can be explored to the fullest. One of the important components of the Scala language is Scala IDE which is Scala Integrated Development Environment and this is used to connected to the Eclipse Java tool. This way the Eclipse features can explored with the Scala IDE. The Scala development can be easily achieved thanks to the Scala IDE.</p>
+                                    <p>Scala programming language is an object oriented language with functional programming language features that is highly scalable and devised to the programming expressions in a precise and safe manner. It is named after its feature of ‘scalability’ which separates it from other programming languages. In a nutshell, Scala is a pure-bred object-oriented programming language inculcating the features of functional languages.</p>
+                                    <p style="text-align: justify;">Developed by <strong>Martin Odersky</strong>, the first version of Scala was launched in the year 2003 and is running successfully since then.</p>
+                                    <p style="text-align: justify;"><strong><em>“We’ve found that Scala has enabled us to deliver things faster with less code. It’s reinvigorated the team.”- Graham Tackley, The Guardian</em></strong></p>
+                                    <h2>Comparison Between Scala <strong>and </strong> Java</h2>
+                                    <p>There is a simple question that every developer should know as to why should he go for it instead of <a href="https://intellipaat.com/tutorial/java-tutorial/">Java</a>? Following comparison will help you make your decision:</p>
+                                    <table class="table table-bordered">
+                                       <tbody>
+                                          <tr>
+                                             <td><strong>Java</strong></td>
+                                             <td><strong>Scala</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Complex syntax</td>
+                                             <td>Simple syntax</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Requires lengthy codes to be written.</td>
+                                             <td>Shorter codes for the same purpose.</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Rewriting is needed.</td>
+                                             <td>Rewriting is not required.</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Dynamic in nature</td>
+                                             <td>Statically-typed</td>
+                                          </tr>
+                                          <tr>
+                                             <td>No assurance of bug-free codes</td>
+                                             <td>Assurance of Lesser defects</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <p>Scala and Java are the two of the most important programming languages that have come our way. Though there are a lot of similarities between the two languages there are a lot of differences as well. So here we will delve into the aspects of Scala and Java and so what are the distinctions between the two and such other aspects. Java is a very old language and Scala is relatively new. The Scala language does need the Java Virtual Machine or JVM at the compilation stage in order to run the Scala programming applications that are supported by the JavaScript.</p>
+                                    <p>Java is basically an object oriented language and a very good one at that. Scala on the other hand is a machine compiled language. Java is mostly used for data gathering and manipulation and this makes the data available to the users with the help of graphic user interface and object oriented patterns. Scala in the strict sense is a functional style of programming.  Scala can run only on a specific environment and this it depends of the Java Virtual Machine. With the help of a compiler the Scala language can offer the object oriented functionality and the type system is statistically scanned during the compilation time just like Java.</p>
+                                    <p>Scala differs from Java in the sense that Scala is a functional programming language whereas Java is an object oriented programming language. Scala has the facility to work in a multi-core architecture environment. Today it is all about the trend of adding more cores instead of going for increased CPU cycles, thus the functional programming helps for this shift thoroughly.</p>
+                                    <p>Scala when compared to Java has enhanced code readability and conciseness. Java has always be accused of being too lengthy when it comes to the size of code. What is written in Java in a certain lines of code can actually be written in Scala in half the number of lines of code.</p>
+                                    <p>Scala has a special feature which is called as lazy evaluation which is the property of delaying the computation of tasks till the time when it is actually needed. This is also called as call-by-need evaluation where in only when the value is needed, the actual evaluation of the expression starts. This benefits in the way that there is no redundant evaluation. Due to this the performance can be improved by avoiding all the calculations that are not needed.</p>
+                                    <p>Having outlined all these benefits of Scala over Java, you must have gotten a clear picture why it is trending nowadays at such a pace. Some of the larger companies of present time such as Twitter, LinkedIn, Intel, etc., rely on this programming language for developing large products. What makes it so special over other available programming languages?</p>
+                                    <ul>
+                                       <li>It is object-oriented in nature.</li>
+                                       <li>Includes functional programming features as well.</li>
+                                       <li>Reflects concurrent and synchronize processing ability.</li>
+                                    </ul>
+                                    <p>This language is based on the concept of object-oriented programming as each value is considered as an object and each operation a method-call. It also uses classes and traits to classify the objects. Additionally this language allows you to expand the existing classes by adding more operations regardless of the sources, i.e., Java or Scala. It also includes the feature of multiple-inheritance by extending the sub-classing. Having said that it is clear that each function acts as an object. It provides function for various uses such as for defining anonymous functions, supporting higher-order functions, nesting functions, etc. Unlike the traditional functional languages, it provides a swift way of shifting to more functional style. This makes it easy to implement most of the times.</p>
+                                    <p>Want to know <a href="https://intellipaat.com/tutorial/scala-tutorial/" target="_blank">What is Scala? Read this extensive tutorial</a>!</p>
+                                    <p>It runs on JVM and is compiled into java Byte Codes, which clearly implies that Java and Scala have the same platform. These byte codes after getting compiled on JVM are executed with the help of Scala commands that are quite similar to Java commands. The tools, frameworks and IDEs that work on Java work smoothly on Scala. It runs on JVM as well as Android which makes it a preferable choice for web framework. Scala runs both own classes as well the custom Java classes without paying attention to the source these are taken from.</p>
+                                    <p>It proves to be a convenient programming language when it comes to developing large server programs. It simplifies programming by allowing you to express the codes in minimum possible lines and immutable manner making it suitable for both the concurrent a well as synchronized processing.</p>
+                                    <p>Finally it is not only easier than Java, it is entertaining to code programs as well. Lesser rapid iterations make it a strong and comprehensible programming language.<br />
+                                    <div id="forminline" class="single-interview-question">
+                                       <div class="interview-subscription">
+                                          <p id="ttext">Download latest questions asked on Scala in top MNC's ?</p>
+                                          <div role="form" class="wpcf7" id="wpcf7-f61232-p3537-o2" lang="en-US" dir="ltr">
+                                             <div class="screen-reader-response"></div>
+                                             <form action="/blog/what-is-scala/#wpcf7-f61232-p3537-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+                                                <div style="display: none;">
+                                                   <input type="hidden" name="_wpcf7" value="61232" />
+                                                   <input type="hidden" name="_wpcf7_version" value="4.2.2" />
+                                                   <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                   <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f61232-p3537-o2" />
+                                                   <input type="hidden" name="_wpnonce" value="0524348c57" />
+                                                </div>
+                                                <div class="subscription clearfix">
+                                                   <p><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Enter your name here" /></span> </p>
+                                                   <p><span class="wpcf7-form-control-wrap ans"><input type="email" name="ans" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Write your Answer here.." /></span> </p>
+                                                   <p><input type="hidden" id="submitlinkINTSUB" name="linksubmitINTSUB" value="url" /></p>
+                                                   <p><input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit" /></p>
+                                                </div>
+                                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <style>#forminline.single-interview-question .interview-subscription .subscription{display:inline-flex !important;}#ttext{font-family:"GothamRounded-Book","helvetica-neue" !important;font-weight:600;font-size:18px !important;color:#444 !important;text-align:left;}#forminline{border:1px solid #CCC;padding:1%;margin-bottom:2%;background:#FFF}#forminline .wpcf7{padding-top:0 !important;margin-top:0 !important;margin-bottom:0 !important;border-bottom:none !important;border-top:none !important;}#forminline .subscription input.wpcf7-text{width:100% !important;float:left;}#forminline .subscription input[type="submit"] , #forminline #model input[type="submit"]{height:35px;float:left;}#forminline .wpcf7-not-valid-tip{position:absolute;top:50px;}#forminline span .wpcf7-not-valid {border: 1px solid #ff0000 !important;background:#FFE2E2 !important;}#forminline .wpcf7-not-valid-tip{display:none !important;}#ttext1{text-align:left;font-family:"GothamRounded-Book","helvetica-neue" !important;font-weight:600;font-size:18px !important;}#forminline input[type=submit]{background: #293549 !important;}#forminline input[type=email]{margin-left:2%;}#forminline input[type=submit]{margin:0 9% !important;}#forminline{width:100%;padding:0 3%;margin:0 auto;}
+                                       @media screen and (max-width: 800px) {#forminline .subscription input.wpcf7-text{width: 100% !important;margin-bottom: 2%;}#forminline .wpcf7-not-valid-tip {position: initial; top:200px;}}
+                                    </style>
+                                    <script>jQuery("#submitlinkINTSUB").val(document.URL);jQuery("#forminline input[name=name]").attr("placeholder","Name");jQuery("#forminline input[name=ans]").attr("placeholder","E-Mail ID");</script></p>
+                                    <h2>Scope of Scala</h2>
+                                    <p>Since its inception, Scala has witnessed tremendous growth in its demand, which is forecasted to increase in the near future. Some of the statistics are mentioned below to support the aforementioned statement:</p>
+                                    <ul>
+                                       <li><strong><em>88% of developers use Scala, 22% use python, and 44% use Java for </em></strong><a href="https://intellipaat.com/tutorial/spark-tutorial/" target="_blank"><strong><em>Spark programming</em></strong></a><strong><em>. –Lightbend</em></strong></li>
+                                       <li><strong><em>Scala has surprisingly shown 77% growth in the year 2014 from the previous year. -KDnuggets</em></strong></li>
+                                    </ul>
+                                    <p>With these growing numbers it can be claimed that Scala is one of the booming technologies in present scenario as major tech players are implementing it in their architecture.</p>
+                                    <p>Despite struggling among the established languages like Java and <a href="https://intellipaat.com/tutorial/python-tutorial/" target="_blank">Python</a>, Scala has made its own niche delivering high-end productivity and performance over the years.</p>
+                                    <h2 style="text-align: justify;">Who should learn Scala?</h2>
+                                    <p>With growing requirement of professionals who would be experts in both functional as well as object-oriented programming, Scala programmers and engineers will definitely make it big in this market. Moreover if you are well-acquainted with Java, C++, C and Python, Scala would be the perfect choice for you to improve your programming skills and get better career opportunities at the same time.</p>
+                                    <p>It is best suited technology for aspiring software professionals, Data Scientists, Data Engineers and Analytics Professionals.</p>
+                                    <h2 style="text-align: justify;">How will Scala help you in career growth?</h2>
+                                    <p>It is not only an easy and less tedious programming language, it is widely used by some of the biggest companies like Twitter, LinkedIn, FourSquare, etc., for implementing their platforms. Following trends will give a clearer view :</p>
+                                    <ul>
+                                       <li><strong><em>A report by Techcrunch.com shows that after Rust, Swift and F#, Scala is fourth most demanded programming language in the world of technology.</em></strong></li>
+                                    </ul>
+                                    <p style="text-align: justify;"><a href="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/scala.jpg"><img class="aligncenter wp-image-3538 size-full" src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/scala.jpg" alt="scala" width="649" height="457" srcset="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/scala.jpg 649w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/scala-300x211.jpg 300w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/scala-600x422.jpg 600w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/scala-199x140.jpg 199w" sizes="(max-width: 649px) 100vw, 649px" /></a></p>
+                                    <ul>
+                                       <li><strong><em>According to a survey conducted by Indeed.com, the job postings for Scala professionals are constantly increasing since 2012.</em></strong></li>
+                                    </ul>
+                                    <p><img class="alignnone size-full wp-image-61990 aligncenter" src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala.jpg" alt="What is Scala" width="800" height="561" srcset="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala.jpg 800w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala-300x210.jpg 300w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala-768x539.jpg 768w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala-600x421.jpg 600w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala-784x550.jpg 784w,  https://cdn.intellipaat.com/blog/wp-content/uploads/2016/12/What-is-Scala-200x140.jpg 200w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+                                    <p>This definitely gives a fair idea why the candidates should learn this programming language in order to grab the best job opportunities.</p>
+                                    <p>Gradually the companies are realizing that it is not merely a programming language, but a medium to improve their existing software products. Its ability to give the developers the strength to code in their familiar programming language has taken it to a new height. Its strength to collaborate functional and object-oriented programming under one roof has given it lots of accolades in the domain of technology.</p>
+                                    <p>With this increase in the demand for Scala, the companies are fervently looking for professionals having good command of this programming language, which signifies that numerous lucrative career opportunities are awaiting the aspirants wanting to make their careers in big data world.</p>
+                                    <p>Want to get trained in Scala? Get enrolled in <a href="https://intellipaat.com/apache-spark-scala-training/" target="_blank">Spark Scala Online Training Course</a> today!</p>
+                                 </div>
+                                 <p>&nbsp;</p>
+                                 <div id="rel-art">Related Articles</div>
+                                 <ul id="rel-articles">
+                                    <li><a href="https://intellipaat.com/blog/tableau-vs-qlikview-difference/" title="Tableau vs Qlikview &#8211; Difference Between Data Visualization Giants">Tableau vs Qlikview &#8211; Difference Between Data Visualization Giants</a></li>
+                                    <li><a href="https://intellipaat.com/blog/tech-savvy-diwakar-chittora-dreams-to-turn-his-4-years-old-intellipaat-into-dollar-four-billion-entity/" title="Tech Savvy Diwakar Chittora Dreams to Turn his 4-years Old Intellipaat into Dollar Four Billion Entity">Tech Savvy Diwakar Chittora Dreams to Turn his 4-years Old Intellipaat into Dollar Four Billion Entity</a></li>
+                                    <li id="last"><a href="https://intellipaat.com/blog/the-big-business-balls-of-big-data/" title="The Big Business Balls of Big Data">The Big Business Balls of Big Data</a></li>
+                                 </ul>
+                                 <hr />
+                              </div>
+                           </div>
+                           <!-- .entry-content -->
+                           <!-- Previous/next post navigation. -->
+                           <div class="col-md-12 post-nav">
+                              <div class="row">
+                                 <div class="col-md-6 col-sm-6 left">
+                                    <nav class="navigation post-navigation" role="navigation">
+                                       <h2 class="screen-reader-text"> </h2>
+                                       <div class="nav-links">
+                                          <div class="nav-previous"><a href="https://intellipaat.com/blog/what-is-apache-solrcloud/" rel="prev"><span class="meta-nav" aria-hidden="true"></span> <span class="screen-reader-text">Previous</span> <span class="post-title">What is Apache SolrCloud?</span></a></div>
+                                          <div class="nav-next"><a href="https://intellipaat.com/blog/what-is-apache-kafka/" rel="next"></a></div>
+                                       </div>
+                                    </nav>
+                                 </div>
+                                 <div class="col-md-6 col-sm-6 right">
+                                    <nav class="navigation post-navigation" role="navigation">
+                                       <h2 class="screen-reader-text"> </h2>
+                                       <div class="nav-links">
+                                          <div class="nav-previous"><a href="https://intellipaat.com/blog/what-is-apache-solrcloud/" rel="prev"></a></div>
+                                          <div class="nav-next"><a href="https://intellipaat.com/blog/what-is-apache-kafka/" rel="next"><span class="meta-nav" aria-hidden="true"></span> <span class="screen-reader-text">Next</span> <span class="post-title">What is Apache Kafka?</span></a></div>
+                                       </div>
+                                    </nav>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- .Previous/next post navigation. -->
+                           <div class="col-md-12">
+                              <div class="row">
+                                 <div class="pull-left">
+                                    <div id="social">
+                                       <a target="_blank" title="What is Scala Programming?" href="https://www.facebook.com/sharer/sharer.php?u=https://intellipaat.com/blog/what-is-scala/" class="external" rel="nofollow"><i class="fa fa-facebook circle"></i></a>
+                                       <a target="_blank" title="What is Scala Programming?" href="https://twitter.com/home?status=https://intellipaat.com/blog/what-is-scala/" class="external" rel="nofollow"><i class="fa fa-twitter circle"></i></a>
+                                       <a target="_blank" title="What is Scala Programming?" href="https://plus.google.com/share?url=https://intellipaat.com/blog/what-is-scala/" class="external" rel="nofollow"><i class="fa fa-google-plus-official"></i></a>
+                                       <a target="_blank" title="What is Scala Programming?" href="https://www.linkedin.com/shareArticle?mini=true&url=https://intellipaat.com/blog/what-is-scala/"><i class="fa fa-linkedin circle"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-12 single-cats">
+                              <div class="row">
+                                 <div class="pull-left">
+                                    <div class="tagcloud">
+                                       <a href="https://intellipaat.com/blog/category/big-data/" class="" title="Big Data">Big Data</a>	
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-12 rel-articles2">
+                              <div class="row">
+                                 <h3>Suggested Articles</h3>
+                                 <div class="col-md-6">
+                                    <div class="row">
+                                       <div id="rpwwt-recent-posts-widget-with-thumbnails-2" class="rpwwt-widget">
+                                          <ul>
+                                             <li>
+                                                <a href="https://intellipaat.com/blog/rising-demand-for-smac-skills-in-it-firms/" title="Rising Demand for SMAC Skills in IT Firms">
+                                                <img src="https://cdn.intellipaat.com/blog/wp-content/uploads/2015/02/Rising-Demand-for-SMAC-Skills-in-IT-Firms-140x79.jpg" class="wp-post-image" title="Rising Demand for SMAC Skills in IT Firms" alt="Rising Demand for SMAC Skills in IT Firms">
+                                                <span class="rpwwt-post-title">Rising Demand for SMAC Skills in IT Firms</span>
+                                                </a>
+                                                <!--div class="rpwwt-post-excerpt">Scala is one of the new languages that is based...</div-->
+                                                <a class="moretag" href="https://intellipaat.com/blog/rising-demand-for-smac-skills-in-it-firms/">Read More</a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="row">
+                                       <div id="rpwwt-recent-posts-widget-with-thumbnails-2" class="rpwwt-widget">
+                                          <ul>
+                                             <li>
+                                                <a href="https://intellipaat.com/blog/risk-management-in-testing/" title="Risk Management in Testing">
+                                                <img src="https://cdn.intellipaat.com/blog/wp-content/uploads/2015/10/Risk-Management-in-Testing-1-140x79.jpg" class="wp-post-image" title="Risk Management in Testing" alt="Risk Management in Testing">
+                                                <span class="rpwwt-post-title">Risk Management in Testing</span>
+                                                </a>
+                                                <!--div class="rpwwt-post-excerpt">Scala is one of the new languages that is based...</div-->
+                                                <a class="moretag" href="https://intellipaat.com/blog/risk-management-in-testing/">Read More</a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--footer class="entry-footer">
+                              <span class="byline"><span class="author vcard"><img alt='' src='https://secure.gravatar.com/avatar/326e11740f8f4d41a749f987d53d4a29?s=49&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/326e11740f8f4d41a749f987d53d4a29?s=98&amp;d=mm&amp;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="https://intellipaat.com/blog/author/swetha/">Swetha Doddamani</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://intellipaat.com/blog/what-is-scala/" rel="bookmark"><time class="entry-date published" datetime="2016-12-12T12:31:12+00:00">December 12, 2016</time><time class="updated" datetime="2018-06-02T17:05:10+00:00">June 2, 2018</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://intellipaat.com/blog/category/big-data/" rel="category tag">Big Data</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="https://intellipaat.com/blog/tag/scala-online-training/" rel="tag">Scala Online training</a>, <a href="https://intellipaat.com/blog/tag/scala-training/" rel="tag">Scala Training</a>, <a href="https://intellipaat.com/blog/tag/what-is-scala/" rel="tag">What is Scala</a></span>			</footer--><!-- .entry-footer -->
+                        </article>
+                        <!-- #post-## -->
+                        <div id="disqus_thread">
+                           <div id="dsq-content">
+                              <ul id="dsq-comments">
+                                 <li class="comment even thread-even depth-1" id="dsq-comment-7019">
+                                    <div id="dsq-comment-header-7019" class="dsq-comment-header">
+                                       <cite id="dsq-cite-7019">
+                                       <span id="dsq-author-user-7019">Bharat rathore</span>
+                                       </cite>
+                                    </div>
+                                    <div id="dsq-comment-body-7019" class="dsq-comment-body">
+                                       <div id="dsq-comment-message-7019" class="dsq-comment-message">
+                                          <p>Hi.. Intellipaat. i have Que..?Why Scala a better choice than Python for Apache Spark?</p>
+                                       </div>
+                                    </div>
+                                    <ul class="children">
+                                       <li class="comment odd alt depth-2" id="dsq-comment-7236">
+                                          <div id="dsq-comment-header-7236" class="dsq-comment-header">
+                                             <cite id="dsq-cite-7236">
+                                             <span id="dsq-author-user-7236">Ravinder Payal</span>
+                                             </cite>
+                                          </div>
+                                          <div id="dsq-comment-body-7236" class="dsq-comment-body">
+                                             <div id="dsq-comment-message-7236" class="dsq-comment-message">
+                                                <p>Parallel processing.</p>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <!-- #comment-## -->
+                                       <li class="comment even depth-2" id="dsq-comment-7248">
+                                          <div id="dsq-comment-header-7248" class="dsq-comment-header">
+                                             <cite id="dsq-cite-7248">
+                                             <span id="dsq-author-user-7248">Anthony Jose</span>
+                                             </cite>
+                                          </div>
+                                          <div id="dsq-comment-body-7248" class="dsq-comment-body">
+                                             <div id="dsq-comment-message-7248" class="dsq-comment-message">
+                                                <p>Hi Bharat, you can build scalable applications with scala , due to its ability to handle large amounts of data in real time and being concise and agile, making it a popular choice for open-source and Big Data projects.<br />
+                                                   So Scala programming is better than any other languages.
+                                                </p>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <!-- #comment-## -->
+                                    </ul>
+                                    <!-- .children -->
+                                 </li>
+                                 <!-- #comment-## -->
+                              </ul>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="rowsingle">
+                     <aside id="secondary" class="sidebar widget-area" role="complementary">
+                        <section id="associated-posts" class="widget widget_text">
+                           <div class="textwidget">
+                              <h2 class="widget-title">Post Associated Articles</h2>
+                              <div id="rpwwt-recent-posts-widget-with-thumbnails-2" class="rpwwt-widget">
+                                 <ul>
+                                    <li>
+                                       <a href="https://intellipaat.com/blog/significance-of-scala-training/" title="Significance Of Scala Training">
+                                       <img src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/07/Significance-of-scala-140x79.jpg" class="wp-post-image" title="Significance Of Scala Training" alt="Significance Of Scala Training">
+                                       <span class="rpwwt-post-title">Significance Of Scala Training</span>
+                                       </a>
+                                       <!--div class="rpwwt-post-excerpt">Scala is one of the new languages that is based...</div-->
+                                       <a class="moretag" href="https://intellipaat.com/blog/significance-of-scala-training/">Read More</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/blog/hadoop-certification-for-high-paying-jobs/" title="How Hadoop Certification is your Passport to High-paying Jobs?">
+                                       <img src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/10/Hadoop-Certification-140x79.jpg" class="wp-post-image" title="How Hadoop Certification is your Passport to High-paying Jobs?" alt="How Hadoop Certification is your Passport to High-paying Jobs?">
+                                       <span class="rpwwt-post-title">How Hadoop Certification is your Passport to High-paying Jobs?</span>
+                                       </a>
+                                       <!--div class="rpwwt-post-excerpt">Scala is one of the new languages that is based...</div-->
+                                       <a class="moretag" href="https://intellipaat.com/blog/hadoop-certification-for-high-paying-jobs/">Read More</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://intellipaat.com/blog/cassandra-vs-mongodb-differences/" title="Cassandra Versus MongoDB">
+                                       <img src="https://cdn.intellipaat.com/blog/wp-content/uploads/2016/06/Cassandra-Vs-MongoDB-140x79.jpg" class="wp-post-image" title="Cassandra Versus MongoDB" alt="Cassandra Versus MongoDB">
+                                       <span class="rpwwt-post-title">Cassandra Versus MongoDB</span>
+                                       </a>
+                                       <!--div class="rpwwt-post-excerpt">Scala is one of the new languages that is based...</div-->
+                                       <a class="moretag" href="https://intellipaat.com/blog/cassandra-vs-mongodb-differences/">Read More</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </section>
+                        <section id="recommneded-course" class="widget widget_text box">
+                           <div class="textwidget">
+                              <h2 class="widget-title">Recommended Course</h2>
+                              <a href="https://intellipaat.com/all-courses/big-data/" target="_blank">
+                              <img src=https://intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/big-data.jpg style=width:100%;height:auto; />				</a>
+                           </div>
+                        </section>
+                        <section id="newsletter-subscription" class="widget widget_text box">
+                           <div class="textwidget">
+                              <h2 class="widget-title">Subscribe Newsletter</h2>
+                              <div role="form" class="wpcf7" id="wpcf7-f61737-o3" lang="en-US" dir="ltr">
+                                 <div class="screen-reader-response"></div>
+                                 <form action="/blog/what-is-scala/#wpcf7-f61737-o3" method="post" class="wpcf7-form" novalidate="novalidate">
+                                    <div style="display: none;">
+                                       <input type="hidden" name="_wpcf7" value="61737" />
+                                       <input type="hidden" name="_wpcf7_version" value="4.2.2" />
+                                       <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                       <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f61737-o3" />
+                                       <input type="hidden" name="_wpnonce" value="92fa2fe3d5" />
+                                    </div>
+                                    <div id="cf7-sn">
+                                       <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                       <div class="col-md-12">
+                                          <div class="row"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="jondoe@email.com" /></span></div>
+                                       </div>
+                                       <div class="col-md-12 btn-center">
+                                          <div class="row"><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" /></div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </section>
+                        <!--section id="newsletter-subscription" class="widget widget_text box"><div class="textwidget">
+                           <h2 class="widget-title">Get Amazing  Tips</h2>
+                           		</div></section-->
+                        <!-- <section id="newsletter-subscription-1" class="widget widget_text box-t"><div class="textwidget">
+                           <img src="https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/images/white.png" style="width:100%;height:auto;" />			<div class="testi-details">
+                           						<h2 class="person-name"></h2>
+                           										<p class="person-designation"></p>
+                           										<p class="person-desc"></p>
+                           				</div>
+                           </div></section> -->
+                     </aside>
+                     <!-- .sidebar .widget-area -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer_course2">
+      <!-- ALL COURSE 2 POPUP SCRIPT
+         ================================================== -->
+      <!-- ALL COURSE 2 ACCORDION
+         ================================================== -->
+      <!-- FAQ READ MORE
+         ================================================== -->
+      <!-- TABS 
+         ================================================== -->
+      <!-- READ MORE CERTIFICATE
+         ================================================== -->
+      <!-- READ MORE REVIEWS
+         ================================================== -->
+      <!-- MOBILE SEARCH TOGGLE
+         ================================================== -->
+      <footer class="">
+         <!--style>
+            .contry_outr{margin:10px;top: -20px;}
+            .dropdown-menu_cunty a {color: #000 !important;}
+            .footer_dynamic{  padding-bottom: 20px;  }
+            .footer_dynamic .footer_dynamic_con ul{  padding-left: 8px; }
+            .footerwidget_new{ }
+            .footerwidget_new .footertitle { color: #fff;     padding-left: 8px; font-size: 15px; text-transform: capitalize;font-weight: normal;}
+            .footerwidget_new .footertitleselected{ color: #ffffff !important;     padding-left: 8px; font-size: 15px;   text-transform: capitalize;font-weight: normal;}
+            </style-->
+         <div class="container footer_dynamic reduce">
+            <div class="row">
+               <div class="col-md-3 col-sm-3">
+                  <div class="footerwidget_new">
+                     <h4 class="footertitleselected">Courses</h4>
+                     <div class="menu-footer-featured-links-column-1-container footer_dynamic_con">
+                        <ul id="menu-footer-featured-links-column-1" class="f-nav-menu">
+                           <li id="menu-item-1858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1858"><a href="https://intellipaat.com/hadoop-developer-training/">Hadoop Developer Training</a></li>
+                           <li id="menu-item-1859" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1859"><a href="https://intellipaat.com/hadoop-analyst-training/">Hadoop Analyst Training</a></li>
+                           <li id="menu-item-1860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1860"><a href="https://intellipaat.com/hadoop-administration-training/">Hadoop Administration Training</a></li>
+                           <li id="menu-item-1861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1861"><a href="https://intellipaat.com/hadoop-testing-training/">Hadoop Testing Training</a></li>
+                           <li id="menu-item-1862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1862"><a href="https://intellipaat.com/cassandra-training/">Cassandra Training</a></li>
+                           <li id="menu-item-1863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1863"><a href="https://intellipaat.com/hbase-training/">Hbase Training</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-3">
+                  <div class="footerwidget_new">
+                     <h4 class="footertitle">&nbsp;</h4>
+                     <div class="menu-footer-featured-links-column-2-container footer_dynamic_con">
+                        <ul id="menu-footer-featured-links-column-2" class="f-nav-menu">
+                           <li id="menu-item-1864" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1864"><a href="https://intellipaat.com/apache-spark-scala-training/">Apache Spark, Scala Training</a></li>
+                           <li id="menu-item-1865" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1865"><a href="https://intellipaat.com/sap-hana-training/">SAP HANA Training</a></li>
+                           <li id="menu-item-1866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1866"><a href="https://intellipaat.com/pentaho-training/">Pentaho Training</a></li>
+                           <li id="menu-item-1867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1867"><a href="https://intellipaat.com/apache-storm-training/">Apache Storm Training</a></li>
+                           <li id="menu-item-1868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1868"><a href="https://intellipaat.com/talend-training/">Talend Training</a></li>
+                           <li id="menu-item-1869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1869"><a href="https://intellipaat.com/r-programming-certification-training/">Analytics – R Training</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-3">
+                  <div class="footerwidget_new">
+                     <h4 class="footertitle">&nbsp;</h4>
+                     <div class="menu-footer-featured-links-column-3-container footer_dynamic_con">
+                        <ul id="menu-footer-featured-links-column-3" class="f-nav-menu">
+                           <li id="menu-item-1870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1870"><a href="https://intellipaat.com/tableau-training/">Tableau Training</a></li>
+                           <li id="menu-item-1871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1871"><a href="https://intellipaat.com/tableau-server-training/">Tableau Server Training</a></li>
+                           <li id="menu-item-1872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1872"><a href="https://intellipaat.com/qlikview-training/">Qlikview Training</a></li>
+                           <li id="menu-item-1873" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1873"><a href="https://intellipaat.com/obiee-training/">OBIEE Developer, Admin Training</a></li>
+                           <li id="menu-item-1874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1874"><a href="https://intellipaat.com/microstrategy-training/">Microstrategy Training</a></li>
+                           <li id="menu-item-1875" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1875"><a href="https://intellipaat.com/sas-training/">SAS Training</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-3">
+                  <div class="footerwidget_new">
+                     <h4 class="footertitle">&nbsp;</h4>
+                     <div class="menu-footer-featured-links-column-4-container footer_dynamic_con">
+                        <ul id="menu-footer-featured-links-column-4" class="f-nav-menu">
+                           <li id="menu-item-1876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1876"><a href="https://intellipaat.com/all-courses/business-intelligence/">Business Intelligence</a></li>
+                           <li id="menu-item-1877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1877"><a href="https://intellipaat.com/all-courses/big-data/">Big Data</a></li>
+                           <li id="menu-item-1878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1878"><a href="https://intellipaat.com/all-courses/cloud-computing/">Cloud Computing</a></li>
+                           <li id="menu-item-1879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1879"><a href="https://intellipaat.com/all-courses/programming/">Programming</a></li>
+                           <li id="menu-item-1880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1880"><a href="https://intellipaat.com/all-courses/database/">DataBase</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <footer class="hidden-sm hidden-xs">
+         <div class="container">
+            <div class="row">
+               <div class="footertop">
+               </div>
+            </div>
+            <div class="row">
+               <div class="footerbottom clearfix">
+               </div>
+               <div class="clearfix" style="margin-top:15px;">
+                  <div class="col-md-12 training-location">
+                     <!--h4 class="footertitle" style="text-transform:none;">Training in Cities</h4-->
+                     <p><small>Training in Cities: Bangalore, Hyderabad, Chennai, Delhi, Kolkata, UK, London, Chicago, San Francisco, Dallas, Washington, New York, Orlando, Boston </small></p>
+                  </div>
+                  <!--div class="col-md-3 select-country">
+                     <label>Select Country</label>
+                     <span class="selectCountryFlag"></span>
+                     <select id="selectCountry" name="selectCountry">
+                     	<option class="india" value="IN"></option>
+                     	<option class="usa" value="US"></option>
+                     </select>
+                     </div-->					
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div id="footerbottom">
+         <div class="container">
+            <div class="row">
+               <div id="footer-social" class="col-md-2 hidden-sm hidden-xs">
+                  <a href="https://www.facebook.com/intellipaatonline/" target="_blank" class="external" rel="nofollow"><i class="fa fa-facebook-official"></i></a>
+                  <a href="https://twitter.com/Intellipaat" target="_blank" class="external" rel="nofollow"><i class="fa fa-twitter"></i></a>
+                  <a href="https://plus.google.com/+Intellipaat" target="_blank" class="external" rel="nofollow"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/company/intellipaat-software-solutions" target="_blank" class="external" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+               </div>
+               <div  class="col-md-5 hidden-sm hidden-xs">
+                  <ul id="menu-blog-footer" class="bf-menu">
+                     <li id="menu-item-61742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61742"><a href="http://intellipaat.com/media/">Media</a></li>
+                     <li id="menu-item-61743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61743"><a href="https://intellipaat.com/terms-of-use-and-privacy-policy/">Terms of Use</a></li>
+                     <li id="menu-item-61744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61744"><a href="#">Sitemap</a></li>
+                     <li id="menu-item-61745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61745"><a href="https://intellipaat.com/refund-and-course-rescheduling-policy/">Refund Policy</a></li>
+                     <li id="menu-item-61746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61746"><a href="https://intellipaat.com/contact-us/">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div id="copyright" class="col-md-5 text-right">
+                  &copy; Copyright 2011-2017 intellipaat.com. All Rights Reserved. 
+                  <span id='footerDisclaimer' class="box">
+                     <a href="#disclaimer">
+                        View Disclaimer
+                  </span>
+               </div>
+            </div>
+            <div id="disclaimer" class="overlay">
+            <div class="popup">
+            <h2>Disclaimer</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content"><p>"PMI®", "PMP®" and "PMI-ACP®" are registered marks of the Project Management Institute, Inc.</p><p>The Open Group®, TOGAF® are trademarks of The Open Group.</p><p>The Swirl logoTM is a trade mark of AXELOS Limited.</p><p>ITIL® is a registered trade mark of AXELOS Limited.</p><p>PRINCE2® is a Registered Trade Mark of AXELOS Limited.</p><p>Certified ScrumMaster® (CSM) and Certified Scrum Trainer® (CST) are registered trademarks of SCRUM ALLIANCE®</p><p>Professional Scrum Master is a registered trademark of Scrum.org  window.</p>
+            </div>
+            </div>
+            </div>
+            <!--div class="row">
+               <div class="secure-pay">
+                   	<div class="secure-pay-info"><strong>100%</strong> Secure Payments. All major credit & debit cards accepted Or Pay by Paypal. <span class="pay_methods"><span> </span></span></div>
+                    </div>
+               </div-->
+         </div>
+         <!--div id="scrolltop">
+            <a><i class="icon-arrow-1-up"></i><span>top</span></a>
+            </div-->
+      </div>
+      <!--/div-->
+      <!--/div>
+         <div-->
+      <link rel='stylesheet' id='theme-all-css-css'  href='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/css/all-css.css' type='text/css' async defer media='all' />
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js' defer='defer'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var _wpcf7 = {"loaderUrl":"https:\/\/intellipaat.com\/blog\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+         /* ]]> */
+      </script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-content/plugins/contact-form-7/includes/js/scripts.js' defer='defer'></script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-includes/js/comment-reply.min.js' defer='defer'></script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-content/themes/intellipaat-blog-new/js/common-blog.js' defer='defer'></script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-includes/js/wp-embed.min.js' defer='defer'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var embedVars = {"disqusConfig":{"platform":"wordpress@4.7.3","language":""},"disqusIdentifier":"3537 https:\/\/intellipaat.com\/blog\/?p=3537","disqusShortname":"intellipaat-com","disqusTitle":"What is Scala Programming?","disqusUrl":"https:\/\/intellipaat.com\/blog\/what-is-scala\/","options":{"manualSync":false},"postId":"3537"};
+         /* ]]> */
+      </script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-content/plugins/disqus-comment-system/media/js/disqus.js' defer='defer'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var countVars = {"disqusShortname":"intellipaat-com"};
+         /* ]]> */
+      </script>
+      <script type='text/javascript' src='https://cdn.intellipaat.com/blog/wp-content/plugins/disqus-comment-system/media/js/count.js' defer='defer'></script>
+      <script src="//assets.pcrl.co/js/jstracker.min.js?api=1"></script>
+      <script>
+         var source_url_of_int_visitor = 'https://intellipaat.com/';
+         		source_url_of_int_visitor = "https://www.google.co.in/";
+          
+         
+         document.addEventListener('picreel_popup_loaded', function(){
+         	var data = {
+         		referrerurl: source_url_of_int_visitor
+         	};
+         	picreel.api.push('send_data_picreel', data);
+         });
+      </script>
+   </body>
+</html>

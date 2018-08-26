@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduction to Scala Programming Language - JournalDev</title>
+
+    <!-- This site is optimized with the Yoast SEO plugin v8.0 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Scala is a programming language that integrates the object oriented and functional language features. This programming language was developed by Martin" />
+    <link rel="canonical" href="https://www.journaldev.com/7444/introduction-to-scala-programming-language" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Introduction to Scala Programming Language - JournalDev" />
+    <meta property="og:description" content="Scala is a programming language that integrates the object oriented and functional language features. This programming language was developed by Martin" />
+    <meta property="og:url" content="https://www.journaldev.com/7444/introduction-to-scala-programming-language" />
+    <meta property="og:site_name" content="JournalDev" />
+    <meta property="article:author" content="https://www.facebook.com/PankajKumarJaiswal" />
+    <meta property="article:section" content="Scala" />
+    <meta property="article:published_time" content="2015-03-30T22:09:33-07:00" />
+    <meta property="article:modified_time" content="2018-04-02T07:48:52-07:00" />
+    <meta property="og:updated_time" content="2018-04-02T07:48:52-07:00" />
+    <meta property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming.png" />
+    <meta property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming.png" />
+    <meta property="og:image:width" content="635" />
+    <meta property="og:image:height" content="282" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Scala is a programming language that integrates the object oriented and functional language features. This programming language was developed by Martin" />
+    <meta name="twitter:title" content="Introduction to Scala Programming Language - JournalDev" />
+    <meta name="twitter:image" content="https://www.journaldev.com/wp-content/uploads/2015/03/Scala-Programming-450x200.png" />
+    <meta name="twitter:creator" content="@JournalDev" />
+    <script type='application/ld+json'>
+        {
+            "@context": "https:\/\/schema.org",
+            "@type": "Person",
+            "url": "https:\/\/www.journaldev.com\/",
+            "sameAs": [],
+            "@id": "#person",
+            "name": "Pankaj Kumar"
+        }
+    </script>
+    <script type='application/ld+json'>
+        {
+            "@context": "https:\/\/schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@id": "https:\/\/www.journaldev.com\/",
+                    "name": "Home"
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@id": "https:\/\/www.journaldev.com\/scala",
+                    "name": "Scala"
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@id": "https:\/\/www.journaldev.com\/7444\/introduction-to-scala-programming-language",
+                    "name": "Introduction to Scala Programming Language"
+                }
+            }]
+        }
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel="amphtml" href="https://www.journaldev.com/7444/introduction-to-scala-programming-language/amp" />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="JournalDev &raquo; Feed" href="https://www.journaldev.com/feed" />
+    <link rel="alternate" type="application/rss+xml" title="JournalDev &raquo; Comments Feed" href="https://www.journaldev.com/comments/feed" />
+    <link rel="alternate" type="application/rss+xml" title="JournalDev &raquo; Introduction to Scala Programming Language Comments Feed" href="https://www.journaldev.com/7444/introduction-to-scala-programming-language/feed" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/cdn.journaldev.com\/wp-includes\/js\/wp-emoji-release.min.js"
+            }
+        };
+        ! function(a, b, c) {
+            function d(a, b) {
+                var c = String.fromCharCode;
+                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+                var d = k.toDataURL();
+                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+                var e = k.toDataURL();
+                return d === e
+            }
+
+            function e(a) {
+                var b;
+                if (!l || !l.fillText) return !1;
+                switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+                    case "flag":
+                        return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+                    case "emoji":
+                        return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b
+                }
+                return !1
+            }
+
+            function f(a) {
+                var c = b.createElement("script");
+                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
+            var g, h, i, j, k = b.createElement("canvas"),
+                l = k.getContext && k.getContext("2d");
+            for (j = Array("flag", "emoji"), c.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+                c.DOMReady = !0
+            }, c.supports.everything || (h = function() {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function() {
+                "complete" === b.readyState && c.readyCallback()
+            })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='news-pro-theme-css' href='https://cdn.journaldev.com/wp-content/themes/news-pro/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='youtube-subscribe-bar-style-css' href='https://cdn.journaldev.com/wp-content/plugins/subscribe-bar-youtube/assets/css/custom.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='toc-screen-css' href='https://cdn.journaldev.com/wp-content/plugins/table-of-contents-plus/screen.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='https://cdn.journaldev.com/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-fonts-css' href='//fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One' type='text/css' media='all' />
+    <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+    <!--[if lt IE 9]>
+<script type='text/javascript' src='https://cdn.journaldev.com/wp-content/themes/genesis/lib/js/html5shiv.min.js'></script>
+<![endif]-->
+    <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/themes/news-pro/js/responsive-menu.js'></script>
+    <link rel='https://api.w.org/' href='https://www.journaldev.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.journaldev.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.journaldev.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.9.8" />
+    <link rel='shortlink' href='https://www.journaldev.com/?p=7444' />
+    <link rel="alternate" type="application/json+oembed" href="https://www.journaldev.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.journaldev.com%2F7444%2Fintroduction-to-scala-programming-language" />
+    <link rel="alternate" type="text/xml+oembed" href="https://www.journaldev.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.journaldev.com%2F7444%2Fintroduction-to-scala-programming-language&#038;format=xml" />
+
+    <head profile="https://www.w3.org/2005/10/profile">
+        <link rel="icon" type="image/png" href="https://www.journaldev.com/fav.png" />
+        <style type="text/css">
+            .site-title a {
+                background: url(https://cdn.journaldev.com/wp-content/uploads/2018/07/logo1.svg) no-repeat !important;
+            }
+        </style>
+        <meta name="onesignal" content="wordpress-plugin" />
+        <link rel="manifest" href="https://www.journaldev.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=" />
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+        <script>
+            window.OneSignal = window.OneSignal || [];
+
+            OneSignal.push(function() {
+                OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                OneSignal.SERVICE_WORKER_PARAM = {
+                    scope: '/'
+                };
+
+                OneSignal.setDefaultNotificationUrl("https://www.journaldev.com");
+                var oneSignal_options = {};
+                window._oneSignalInitOptions = oneSignal_options;
+
+                oneSignal_options['wordpress'] = true;
+                oneSignal_options['appId'] = 'bab8c5d5-918b-46f8-8634-2efa6c23e327';
+                oneSignal_options['autoRegister'] = true;
+                oneSignal_options['welcomeNotification'] = {};
+                oneSignal_options['welcomeNotification']['title'] = "";
+                oneSignal_options['welcomeNotification']['message'] = "";
+                oneSignal_options['path'] = "https://www.journaldev.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+                oneSignal_options['safari_web_id'] = "web.onesignal.auto.0818a4e7-118f-4fc1-b0e2-07892e811a2a";
+                oneSignal_options['promptOptions'] = {};
+                oneSignal_options['notifyButton'] = {};
+                oneSignal_options['notifyButton']['enable'] = true;
+                oneSignal_options['notifyButton']['position'] = 'bottom-left';
+                oneSignal_options['notifyButton']['theme'] = 'default';
+                oneSignal_options['notifyButton']['size'] = 'medium';
+                oneSignal_options['notifyButton']['prenotify'] = true;
+                oneSignal_options['notifyButton']['displayPredicate'] = function() {
+                    return OneSignal.isPushNotificationsEnabled()
+                        .then(function(isPushEnabled) {
+                            return !isPushEnabled;
+                        });
+                };
+                oneSignal_options['notifyButton']['showCredit'] = false;
+                oneSignal_options['notifyButton']['text'] = {};
+                oneSignal_options['notifyButton']['text']['message.prenotify'] = 'Stay Updated with us! Subscribe to our free notifications.';
+                oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Thanks for subscribing!';
+                oneSignal_options['notifyButton']['text']['message.action.subscribed'] = 'Thanks for subscribing!';
+                OneSignal.init(window._oneSignalInitOptions);
+            });
+
+            function documentInitOneSignal() {
+                var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+                var oneSignalLinkClickHandler = function(event) {
+                    OneSignal.push(['registerForPushNotifications']);
+                    event.preventDefault();
+                };
+                for (var i = 0; i < oneSignal_elements.length; i++)
+                    oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+            }
+
+            if (document.readyState === 'complete') {
+                documentInitOneSignal();
+            } else {
+                window.addEventListener("load", function(event) {
+                    documentInitOneSignal();
+                });
+            }
+        </script>
+
+        <link rel="icon" href="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-150x150.png" sizes="32x32" />
+        <link rel="icon" href="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img.png" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img.png" />
+        <meta name="msapplication-TileImage" content="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img.png" />
+        <style type="text/css" id="wp-custom-css">
+            .scriptlesssocialsharing {
+                box-sizing: border-box;
+                margin: 18px auto
+            }
+            .scriptlesssocialsharing-buttons {
+                border-collapse: separate;
+                border-spacing: 3px;
+                display: table;
+                table-layout: fixed;
+                width: 100%
+            }
+            .scriptlesssocialsharing-buttons a.button {
+                border: none;
+                border-radius: 0;
+                color: white;
+                display: table-cell;
+                text-align: center;
+                text-decoration: none;
+                padding: 9px
+            }
+            .scriptlesssocialsharing-buttons a.button: hover {
+                color: #fff
+            }
+            .scriptlesssocialsharing-buttons .sss-name {
+                position: inherit;
+                clip: rect(1px, 1px, 1px, 1px);
+                height: 1px;
+                width: 1px;
+                border: 0;
+                overflow: hidden;
+                word-wrap: break-word
+            }
+            .scriptlesssocialsharing-buttons .button.email {
+                background-color: #333;
+                background-color: rgba(51, 51, 51, 0.8)
+            }
+            .scriptlesssocialsharing-buttons .button.email: hover {
+                background-color: #333
+            }
+            .scriptlesssocialsharing-buttons .button.twitter {
+                background-color: #55acee;
+                background-color: rgba(85, 172, 238, 0.8)
+            }
+            .scriptlesssocialsharing-buttons .button.twitter: hover {
+                background-color: #55acee
+            }
+            .scriptlesssocialsharing-buttons .button.facebook {
+                background-color: #3b5998;
+                background-color: rgba(59, 89, 152, 0.8)
+            }
+            .scriptlesssocialsharing-buttons .button.facebook: hover {
+                background-color: #3b5998
+            }
+            .scriptlesssocialsharing-buttons .button.linkedin {
+                background-color: #0077b5;
+                background-color: rgba(0, 119, 181, 0.8)
+            }
+            .scriptlesssocialsharing-buttons .button.linkedin: hover {
+                background-color: #0077b5
+            }
+            .scriptlesssocialsharing-buttons .button.google {
+                background-color: #dc4e41;
+                background-color: rgba(220, 78, 65, 0.8)
+            }
+            .scriptlesssocialsharing-buttons .button.google: hover {
+                background-color: #dc4e41
+            }
+            .scriptlesssocialsharing-buttons .button.pinterest {
+                background-color: #bd081c;
+                background-color: rgba(189, 8, 28, .8)
+            }
+            .scriptlesssocialsharing-buttons .button.pinterest: hover {
+                background-color: #bd081c
+            }
+            .scriptlesssocialsharing-buttons .button.reddit {
+                background-color: #ff4500;
+                background-color: rgba(255, 69, 0, .8)
+            }
+            .scriptlesssocialsharing-buttons .button.reddit: hover {
+                background-color: #ff4500
+            }
+            @media print {
+                .scriptlesssocialsharing {
+                    display: none
+                }
+            }
+        </style>
+    </head>
+
+    <body class="post-template-default single single-post postid-7444 single-format-standard dwpb-push-page dwpb_responsive_extra_small custom-header header-image content-sidebar" itemscope itemtype="https://schema.org/WebPage">
+        <div class="site-container">
+            <header class="site-header" itemscope itemtype="https://schema.org/WPHeader">
+                <div class="wrap">
+                    <div class="title-area">
+                        <p class="site-title" itemprop="headline"><a href="https://www.journaldev.com/">JournalDev</a>
+                        </p>
+                        <p class="site-description" itemprop="description">Java, Java EE, Android, Python, Web Development Tutorials</p>
+                    </div>
+                    <div class="widget-area header-widget-area">
+                        <!-- Quick Adsense Wordpress Plugin: http://quickadsense.com/ -->
+                        <section id="adswidget4-quick-adsense-2" class="widget widget_adswidget4-quick-adsense">
+                            <div class="widget-wrap">
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <!-- CM_JD_AP_Top_Responsive -->
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5143693538742787" data-ad-slot="5697562523" data-ad-format="auto"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </header>
+            <nav class="nav-primary" aria-label="Main" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <div class="wrap">
+                    <ul id="menu-new-headermenu" class="menu genesis-nav-menu menu-primary">
+                        <li id="menu-item-17036" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17036"><a href="https://www.journaldev.com/java-tutorial-java-ee-tutorials" itemprop="url"><span itemprop="name">Java Tutorial</span></a>
+                        </li>
+                        <li id="menu-item-7611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7611"><a href="#" itemprop="url"><span itemprop="name">#Index Posts</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-7612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7612"><a href="https://www.journaldev.com/7153/core-java-tutorial" itemprop="url"><span itemprop="name">Core Java Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7613"><a href="https://www.journaldev.com/1827/java-design-patterns-example-tutorial" itemprop="url"><span itemprop="name">Java Design Patterns</span></a>
+                                </li>
+                                <li id="menu-item-7614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7614"><a href="https://www.journaldev.com/2114/servlet-jsp-tutorial" itemprop="url"><span itemprop="name">Servlet JSP Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7615"><a href="https://www.journaldev.com/2310/struts2-tutorial-with-example-projects" itemprop="url"><span itemprop="name">Struts 2 Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7616"><a href="https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial" itemprop="url"><span itemprop="name">Spring Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7638"><a href="https://www.journaldev.com/7635/jsf-tutorial" itemprop="url"><span itemprop="name">JSF Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7620"><a href="https://www.journaldev.com/5516/primefaces-tutorial-with-example-projects" itemprop="url"><span itemprop="name">Primefaces Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7619"><a href="https://www.journaldev.com/2681/jdbc-tutorial" itemprop="url"><span itemprop="name">JDBC Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7617"><a href="https://www.journaldev.com/3793/hibernate-tutorial" itemprop="url"><span itemprop="name">Hibernate Tutorial</span></a>
+                                </li>
+                                <li id="menu-item-7618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7618"><a href="https://www.journaldev.com/6672/mongodb-tutorial-installation-example-projects-integration-with-servlet-spring-jsf" itemprop="url"><span itemprop="name">MongoDB Tutorial</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-7621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7621"><a href="#" itemprop="url"><span itemprop="name">#Interview Questions</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-7622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7622"><a href="https://www.journaldev.com/java-interview-questions" itemprop="url"><span itemprop="name">Java Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7623"><a href="https://www.journaldev.com/2529/jdbc-interview-questions-and-answers" itemprop="url"><span itemprop="name">JDBC Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7624"><a href="https://www.journaldev.com/2015/servlet-interview-questions-and-answers" itemprop="url"><span itemprop="name">Servlet Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7625"><a href="https://www.journaldev.com/2110/jsp-interview-questions-and-answers" itemprop="url"><span itemprop="name">JSP Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7626"><a href="https://www.journaldev.com/2354/struts2-interview-questions-and-answers" itemprop="url"><span itemprop="name">Struts2 Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7627"><a href="https://www.journaldev.com/2696/spring-interview-questions-and-answers" itemprop="url"><span itemprop="name">Spring Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7628"><a href="https://www.journaldev.com/3633/hibernate-interview-questions-and-answers" itemprop="url"><span itemprop="name">Hibernate Interview Questions</span></a>
+                                </li>
+                                <li id="menu-item-7629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7629"><a href="https://www.journaldev.com/7261/jsf-interview-questions-and-answers" itemprop="url"><span itemprop="name">JSF Interview Questions</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-17037" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17037"><a href="https://www.journaldev.com/resources" itemprop="url"><span itemprop="name">Resources</span></a>
+                        </li>
+                        <li id="menu-item-17772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17772"><a href="https://www.journaldev.com/hire-me" itemprop="url"><span itemprop="name">Hire Me</span></a>
+                        </li>
+                        <li id="menu-item-18065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18065"><a href="https://www.journaldev.com/android-app" itemprop="url"><span itemprop="name">Download Android App</span></a>
+                        </li>
+                        <li id="menu-item-18187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18187"><a href="https://www.journaldev.com/write-for-us" itemprop="url"><span itemprop="name">Contribute</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="wrapper mailchimp">
+                <div class="box">
+                    <form action="//journaldev.us8.list-manage.com/subscribe/post-json?u=612f3d966c86000f37699d8cf&amp;id=c64db63284&SIGNUP=TOP_HEADER&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+                        <span>
+					Subscribe to Download Java Design Patterns eBook
+				</span>
+                        <div class="main_inputs">
+                            <input type="text" value="" name="FNAME" class="name" id="mce-name" placeholder="Full name" required>
+
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="name@example.com" required>
+
+                            <input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+                        </div>
+
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_612f3d966c86000f37699d8cf_c64db63284" tabindex="-1" value="">
+                        </div>
+                        <div class="clear"></div>
+
+                    </form>
+                    <div id="subscribe-result" style="display: none">
+                        <p>Thank you for subscribing. Please check your email to confirm subscription.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var $ = jQuery;
+                $(document).ready(function() {
+                    var $form = $('#mc-embedded-subscribe-form');
+                    if ($form.length > 0) {
+                        $('#mc-embedded-subscribe-form input[type="submit"]').bind('click', function(event) {
+                            if (event) event.preventDefault();
+                            mailchimp_email_register($form);
+                        })
+                    }
+                })
+
+                function mc_validateEmail(email) {
+                    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(String(email).toLowerCase());
+                }
+
+                function mailchimp_email_register($form) {
+                    if (mc_validateEmail($("#mce-EMAIL").val())) {
+                        $('#mc-embedded-subscribe').val('Sending...');
+                        $.ajax({
+                            type: $form.attr('method'),
+                            url: $form.attr('action'),
+                            data: $form.serialize(),
+                            cache: false,
+                            dataType: 'json',
+                            contentType: 'application/json; charset=utf-8',
+                            error: function(err) {
+                                alert('Could not connect to the registration server. Please try again later.')
+                            },
+                            success: function(data) {
+                                $('#mc-embedded-subscribe').val('subscribe');
+                                if (data.result === 'success') {
+                                    console.log(data.msg);
+                                    $('#mce-EMAIL').css('borderColor', '#ffffff');
+                                    $('#subscribe-result').css('color', 'rgb(53, 114, 210)');
+                                    $('#mc-embedded-subscribe-form').fadeOut(300);
+                                    $('#subscribe-result').fadeIn(300);
+                                    document.cookie = "subscribed=true; expires=Thu, 18 Dec 2050 12:00:00 UTC;domain=;path=/";
+                                    $('#mce-EMAIL').val('');
+                                    $('#mce-name').val('');
+                                } else {
+                                    console.log(data.msg)
+                                    alert("You have already subscribed! Please try with different email.");
+                                }
+                            }
+                        });
+                    } else {
+                        alert("Please enter a valid email");
+                    }
+                };
+            </script>
+
+            <div class="site-inner">
+                <div class="content-sidebar-wrap">
+                    <main class="content">
+                        <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><span><span><a href="https://www.journaldev.com/" >Home</a> » <span><a href="https://www.journaldev.com/scala" >Scala</a> » <span class="breadcrumb_last">Introduction to Scala Programming Language</span></span>
+                            </span>
+                            </span>
+                        </div>
+                        <article class="post-7444 post type-post status-publish format-standard category-scala entry" itemscope itemtype="https://schema.org/CreativeWork">
+                            <header class="entry-header">
+                                <h1 class="entry-title" itemprop="headline">Introduction to Scala Programming Language</h1>
+                                <p class="entry-meta">
+                                    <time class="entry-modified-time" itemprop="dateModified" datetime="2018-04-02T07:48:52+00:00">April 2, 2018</time>by <span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.journaldev.com/author/pankaj" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Pankaj</span>
+                                    </a>
+                                    </span> <span class="entry-comments-link"><a href="https://www.journaldev.com/7444/introduction-to-scala-programming-language#comments">2 Comments</a></span> 
+                                </p>
+                            </header>
+                            <div class="entry-content" itemprop="text">
+                                <!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+                                <div style="float: none; margin:10px 0 10px 0; text-align:center;">
+                                    <div data-type="ad" data-publisher="journaldev.com" data-zone="jd_after_entry_728x90" data-format="728x90"></div>
+                                </div>
+                                <p><strong>Scala</strong> is a programming language that integrates the object oriented and functional language features. This programming language was developed by Martin Odersky and released in 2003. It has been used to develop
+                                    several scalable concurrent applications in the recent years.</p>
+                                <div id="toc_container" class="toc_light_blue no_bullets">
+                                    <p class="toc_title">Table of Contents</p>
+                                    <ul class="toc_list">
+                                        <li><a href="#scala-features"><span class="toc_number toc_depth_1">1</span> Scala Features</a>
+                                        </li>
+                                        <li><a href="#scala-and-java"><span class="toc_number toc_depth_1">2</span> Scala and Java</a>
+                                        </li>
+                                        <li><a href="#scala-hello-world-program"><span class="toc_number toc_depth_1">3</span> Scala Hello World Program</a>
+                                        </li>
+                                        <li><a href="#key-points-about-scala-program"><span class="toc_number toc_depth_1">4</span> Key points about Scala Program</a>
+                                        </li>
+                                        <li><a href="#scala-frameworks"><span class="toc_number toc_depth_1">5</span> Scala Frameworks</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3><span id="scala-features">Scala Features</span></h3>
+                                <p>The features of Scala are as listed below;</p>
+                                <ul>
+                                    <li><strong>Object Oriented</strong>: Scala is pure object oriented language where each value is treated as an object. Behaviours and classes of the object are described by classes and traits. Multiple Inheritance is supported
+                                        by mixin based composition and extending classes by subclassing.</li>
+                                    <li><strong>Functional:</strong> Scala is a functional programming language where each function is a value. Every value is an object so each function is an object. Scala supports Nested and Higher order functions and provisions
+                                        for defining anonymous functions.</li>
+                                    <li><strong>Statically Typed:</strong> Scala enforces type system that provides constraints and abstractions to be used in a safe and coherent manner in other words Scala is a strongly typed language. The type system support
+                                        includes variance annotations, generic classes, upper and lower bounds, explicitly typed self references, views and polymorphic methods. Local Type Inference mechanism ensures that there is no need to annotate the
+                                        program with redundant type information. All these together forms a powerful basis for safe reuse of programming abstractions.</li>
+                                    <li><strong>Extensible:</strong> Scala provides language mechanism combinations that are unique and hence easier to integrate new language constructs in the form of libraries. Closures are automatically constructed upon
+                                        the expected type and any method can be used as infix or postfix operators. New statements can be facilitated without extending the syntax and macro like meta programming facilities.</li>
+                                    <li><strong>Runs on JVM:</strong> Scala runs on Java Virtual Machine(JVM) and when a scala program is compiled, byte code is generated that is executed by JVM. Both Scala and Java share a common platform and hence java programs
+                                        can be converted to Scala.</li>
+                                    <li><strong>Executes Java Code:</strong> Scala can use all the classes of Java SDK, custom java classes or Java open source projects.</li>
+                                </ul>
+                                <p>
+                                    <a href="https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming.png">
+                                        <img src="https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming-450x200.png" alt="Scala-Programming" width="450" height="200" class="aligncenter size-medium wp-image-7446" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming-450x200.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming-20x9.png 20w, https://cdn.journaldev.com/wp-content/uploads/2015/03/Scala-Programming.png 635w"
+                                        sizes="(max-width: 450px) 100vw, 450px" />
+                                    </a>
+                                </p>
+                                <h3><span id="scala-and-java">Scala and Java</span></h3>
+                                <p>Scala provides some of the extra features that differ from Java. They are;</p>
+                                <!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+                                <div style="float: none; margin:10px 0 10px 0; text-align:center;">
+                                    <div data-type="ad" data-publisher="journaldev.com" data-zone="jd_leaderboard_728x90" data-format="728x90"></div>
+                                </div>
+
+                                <ol>
+                                    <li><strong><a href="https://www.journaldev.com/1162/java-multithreading-concurrency-interview-questions-answers">Concurrency</a> Support</strong>: Support for multiple cpu/core utilization out of the box enabling faster
+                                        execution of programs unlike traditional programming languages.</li>
+                                    <li><strong>Closures</strong>: Closure is a function whose return value depends on the value of one or more variables defined outside this function.</li>
+                                    <li><strong>Traits</strong>: Trait consists of a method and field definitions that can be reused by mixing them into classes.</li>
+                                    <li><strong>Nested Functions</strong>: A Function defined inside another function is termed as a Nested function and is supported in Scala.</li>
+                                    <li><strong>Domain Specific Language support</strong>: Enables users to write their own language specifications and implement using Scala.</li>
+                                    <li><strong>Type Inference</strong>: Automatic detection of data types even though not specified by the user.</li>
+                                    <li><strong>All functions are object</strong>: It supports all standard <a href="https://www.journaldev.com/12496/oops-concepts-java-example">OOPS concepts</a> and makes functions easy to reuse.</li>
+                                    <li><strong>All types are Objects</strong>: Everything is an object in Scala unlike in Java.</li>
+                                    <li><strong>Supports REPL (Read Evaluate Print and Loop)</strong>: Allows us to type the programs on the fly in a shell and get back immediate output.</li>
+                                </ol>
+                                <h3><span id="scala-hello-world-program">Scala Hello World Program</span></h3>
+                                <p>Let us consider a simple hello world program and understand the basic structure of a scala program. This is just to get started and will go into setup and installation procedures in detail in the next article.</p>
+                                <pre><code><div class='re_clip-board'>Copy</div>
+scala&gt; object HelloWorld {
+
+| def main(args: Array[String]) {
+
+| println("Hello World!!")
+
+| }
+
+| }
+</code></pre>
+                                <p><strong>object</strong> is the keyword, <strong>HelloWorld</strong> is the name of the object that will be created.</p>
+                                <!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+                                <div style="float: none; margin:10px 0 10px 0; text-align:center;">
+                                    <div data-type="ad" data-publisher="journaldev.com" data-format="300x250" data-zone="jd_post_mid_300x250"></div>
+                                </div>
+
+                                <p>Scala program execution starts with <strong>main method</strong> so the main method is defined by passing string array as an argument.</p>
+                                <p><strong>def</strong> is a keyword indicating that we are defining a method whose name is “main”. We use <strong>println</strong> to print “Hello World”.</p>
+                                <h3><span id="key-points-about-scala-program">Key points about Scala Program</span></h3>
+                                <ul>
+                                    <li>Scala Programs are case sensitive HelloWorld is different from helloWorld</li>
+                                    <li>First letter of the Class Name should be in uppercase.</li>
+                                    <li>File name should be exactly same as the object name</li>
+                                    <li>Method names should begin with a lowercase.</li>
+                                </ul>
+                                <p>After typing the above program in scala shell run the program we get the message “defined object HelloWorld”</p>
+                                <p>Now run the HelloWorld program as;</p>
+                                <pre><code><div class='re_clip-board'>Copy</div>
+scala&gt;HelloWorld.main(null)
+
+Hello World!!
+</code></pre>
+                                <p>Here we invoke the main method of the HelloWorld object.</p>
+                                <!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+                                <div style="float: none; margin:10px 0 10px 0; text-align:center;">
+                                    <!-- CM_JD_AP_Middle_Responsive -->
+                                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5143693538742787" data-ad-slot="7174295726" data-ad-format="auto"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+
+                                <h3><span id="scala-frameworks">Scala Frameworks</span></h3>
+                                <p>Scala is used a lot these days especially in enterprise applications. That&#8217;s why there are frameworks getting developed on top of Scala programming language. Some of the popular frameworks include;</p>
+                                <ul>
+                                    <li>Play framework</li>
+                                    <li>Bowler framework</li>
+                                    <li>Lift framework</li>
+                                </ul>
+                                <p>That&#8217;s all for brief introduction of <strong>Scala Programming Language</strong>, we will look into installation and Scala language core features in coming posts.</p>
+
+                                <!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+                                <div style="float: none; margin:0px 0 0px 0; text-align:center;">
+                                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                    <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-5143693538742787" data-ad-slot="3941417857"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+
+                                <div style="font-size: 0px; height: 0px; line-height: 0px; margin: 0; padding: 0; clear: both;"></div>
+                                <div class="scriptlesssocialsharing">
+                                    <div class="scriptlesssocialsharing-buttons"><a class="button twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Introduction%20to%20Scala%20Programming%20Language&#038;url=https%3A%2F%2Fwww.journaldev.com%2F7444%2Fintroduction-to-scala-programming-language&#038;via=JournalDev&#038;related=JournalDev"
+                                        rel="noopener"><span class="sss-name">Twitter</span></a><a class="button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.journaldev.com%2F7444%2Fintroduction-to-scala-programming-language"
+                                        rel="noopener"><span class="sss-name">Facebook</span></a><a class="button linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=1&#038;url=https%3A%2F%2Fwww.journaldev.com%2F7444%2Fintroduction-to-scala-programming-language&#038;title=Introduction%20to%20Scala%20Programming%20Language&#038;source=https://www.journaldev.com"
+                                        rel="noopener"><span class="sss-name">Linkedin</span></a><a class="button email" target="_blank" href="mailto:?body=I%20read%20this%20post%20and%20wanted%20to%20share%20it%20with%20you.%20Here&#039;s%20the%20link:%20https%3A%2F%2Fwww.journaldev.com%2F7444%2Fintroduction-to-scala-programming-language&#038;subject=A%20post%20worth%20sharing:%20Introduction%20to%20Scala%20Programming%20Language"
+                                        rel="noopener"><span class="sss-name">Email</span></a>
+                                    </div>
+                                </div>
+                                <div class="prev-next-navigation">
+                                    <a href="https://www.journaldev.com/7456/download-install-scala-linux-unix-windows" rel="next">
+                                        <div class="next"><span class="next_icon">Next&nbsp;</span>
+                                            <br/> <span class="pagi_content">Download, Install Scala on Linux, Unix, Windows</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- .prev-next-navigation -->
+                                <section class="author-box" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                    <img alt='' src='https://secure.gravatar.com/avatar/8087ef00af2610b870ada12392286695?s=120&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/8087ef00af2610b870ada12392286695?s=240&#038;d=blank&#038;r=g 2x'
+                                    class='avatar avatar-120 photo' height='120' width='120' />
+                                    <h4 class="author-box-title">About <span itemprop="name">Pankaj</span></h4>
+                                    <div class="author-box-content" itemprop="description">
+                                        <p>If you have come this far, it means that you liked what you are reading. Why not reach little more and connect with me directly on <a href="https://plus.google.com/118104420597648001532/posts?rel=author"><strong>Google Plus</strong></a>,
+                                            <a
+                                            href="https://www.facebook.com/journaldev"><strong>Facebook</strong>
+                                                </a>or <a href="https://twitter.com/JournalDev"><strong>Twitter</strong></a>. I would love to hear your thoughts and opinions on my articles directly.</p>
+                                        <p>Recently I started creating video tutorials too, so do check out my videos on <a href="https://www.youtube.com/user/JournalDev"><strong>Youtube</strong></a>.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <footer class="entry-footer">
+                                <p class="entry-meta"><span class="entry-categories">Filed Under: <a href="https://www.journaldev.com/scala" rel="category tag">Scala</a></span> 
+                                </p>
+                            </footer>
+                        </article>
+                        <div class="adjacent-entry-pagination pagination">
+                            <div class="pagination-previous alignleft"></div>
+                            <div class="pagination-next alignright"><a href="https://www.journaldev.com/7456/download-install-scala-linux-unix-windows" rel="next">Download, Install Scala on Linux, Unix, Windows &#x000BB;</a>
+                            </div>
+                        </div>
+                        <div class="entry-comments" id="comments">
+                            <h3>Comments</h3>
+                            <ol class="comment-list">
+                                <li class="comment even thread-even depth-1" id="comment-33191">
+                                    <article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+
+                                        <header class="comment-header">
+                                            <p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                                <span itemprop="name">Venu</span>  <span class="says">says</span>	
+                                            </p>
+
+                                            <p class="comment-meta">
+                                                <time class="comment-time" datetime="2015-09-18T05:32:29+00:00" itemprop="datePublished"><a href="https://www.journaldev.com/7444/introduction-to-scala-programming-language#comment-33191" class="comment-time-link" itemprop="url">September 18, 2015 at 5:32 am</a>
+                                                </time>
+                                            </p>
+                                        </header>
+
+                                        <div class="comment-content" itemprop="text">
+
+                                            <p>Great scala tutorials, easily understandable, I request share some tutorials on case classes its most useful in apache spark.</p>
+                                        </div>
+
+                                        <div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-33191' onclick='return addComment.moveForm( "comment-33191", "33191", "respond", "7444" )' aria-label='Reply to Venu'>Reply</a>
+                                        </div>
+
+                                    </article>
+                                </li>
+                                <!-- #comment-## -->
+
+                                <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-32134">
+                                    <article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+
+                                        <header class="comment-header">
+                                            <p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                                <span itemprop="name">Mohamed</span>  <span class="says">says</span>	
+                                            </p>
+
+                                            <p class="comment-meta">
+                                                <time class="comment-time" datetime="2015-04-05T02:42:01+00:00" itemprop="datePublished"><a href="https://www.journaldev.com/7444/introduction-to-scala-programming-language#comment-32134" class="comment-time-link" itemprop="url">April 5, 2015 at 2:42 am</a>
+                                                </time>
+                                            </p>
+                                        </header>
+
+                                        <div class="comment-content" itemprop="text">
+
+                                            <p>Hi Dev,</p>
+                                            <p>Your tutorials and explanation are as usual top notch.. Could add some tutorials for grails and groovy also&#8230;</p>
+                                        </div>
+
+                                        <div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-32134' onclick='return addComment.moveForm( "comment-32134", "32134", "respond", "7444" )' aria-label='Reply to Mohamed'>Reply</a>
+                                        </div>
+
+                                    </article>
+                                </li>
+                                <!-- #comment-## -->
+                            </ol>
+                        </div>
+                        <div id="respond" class="comment-respond">
+                            <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/7444/introduction-to-scala-programming-language#respond" style="display:none;">Cancel reply</a></small></h3>	
+                            <form action="https://www.journaldev.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+                                <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span>
+                                </p>
+                                <p class="comment-form-comment">
+                                    <label for="comment">Comment</label>
+                                    <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
+                                </p>
+                                <p class="comment-form-author">
+                                    <label for="author">Name <span class="required">*</span>
+                                    </label>
+                                    <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' />
+                                </p>
+                                <p class="comment-form-email">
+                                    <label for="email">Email <span class="required">*</span>
+                                    </label>
+                                    <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' />
+                                </p>
+                                <p class="form-submit">
+                                    <input name="submit" type="submit" id="submit" class="submit" value="Post Comment" />
+                                    <input type='hidden' name='comment_post_ID' value='7444' id='comment_post_ID' />
+                                    <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                </p>
+                                <!-- Anti-spam plugin v.5.2 wordpress.org/plugins/anti-spam/ -->
+                                <p class="antispam-group antispam-group-q" style="clear: both;">
+                                    <label>Current ye@r <span class="required">*</span>
+                                    </label>
+                                    <input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2018" />
+                                    <input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="5.2" autocomplete="off" />
+                                </p>
+                                <p class="antispam-group antispam-group-e" style="display: none;">
+                                    <label>Leave this field empty</label>
+                                    <input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off" />
+                                </p>
+                            </form>
+                        </div>
+                        <!-- #respond -->
+                    </main>
+                    <aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="https://schema.org/WPSideBar">
+                        <section id="search-3" class="widget widget_search">
+                            <div class="widget-wrap">
+                                <form class="search-form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" method="get" action="https://www.journaldev.com/" role="search">
+                                    <meta itemprop="target" content="https://www.journaldev.com/?s={s}" />
+                                    <input itemprop="query-input" type="search" name="s" placeholder="Search for tutorials..." />
+                                    <input type="submit" value="Search" />
+                                </form>
+                            </div>
+                        </section>
+
+                        <!-- Quick Adsense Wordpress Plugin: http://quickadsense.com/ -->
+                        <section id="adswidget5-quick-adsense-2" class="widget widget_adswidget5-quick-adsense">
+                            <div class="widget-wrap">
+                                <!-- jd_sidebar_responsive -->
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5143693538742787" data-ad-slot="9959852017" data-ad-format="auto"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+                        <section id="custom_html-7" class="widget_text widget widget_custom_html">
+                            <div class="widget_text widget-wrap">
+                                <h4 class="widget-title widgettitle">Download Android App</h4>
+                                <div class="textwidget custom-html-widget">
+                                    <a href="https://www.journaldev.com/android-app-play-store" target="_blank" rel="noopener">
+                                        <img src="https://cdn.journaldev.com/wp-content/uploads/google-play-badge.png" width="336" height="130" alt="JournalDev Android App Play Store Link" />
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="text-10" class="widget widget_text">
+                            <div class="widget-wrap">
+                                <div class="textwidget">
+                                    <p>
+                                        <script id="mNCC" language="javascript">
+                                            medianet_width = "300";
+                                            medianet_height = "600";
+                                            medianet_crid = "382243897";
+                                            medianet_versionId = "3111299";
+                                        </script>
+                                        <br />
+                                        <script src="//contextual.media.net/nmedianet.js?cid=8CUSP8IK6"></script>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+            <footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
+                <div class="wrap">
+                    <p>&#x000A9;&nbsp;2018 &middot; <a href="https://www.journaldev.com/privacy-policy">Privacy Policy</a> &middot; Don&#39;t copy, it&#39;s Bad Karma &middot; Powered by <a href="https://wordpress.org/" title="WordPress">WordPress</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+        <script>
+            (function() {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    // format, zoneKey, segment:value, options
+                    _bsa.init('stickybox', 'CKYI6KQU', 'placement:journaldevcom');
+                    //  _bsa.init('fancybar', 'CK7D4KJE', 'placement:journaldevcom');
+                }
+            })();
+        </script>
+        <script type='text/javascript'>
+            function _dmBootstrap(file) {
+                var _dma = document.createElement('script');
+                _dma.type = 'text/javascript';
+                _dma.async = true;
+                _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+            }
+
+            function _dmFollowup(file) {
+                if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');
+            }
+            (function() {
+                _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js');
+                setTimeout(_dmFollowup, 2000);
+            })();
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12171637-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-12171637-4', {
+                'anonymize_ip': true
+            });
+        </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+                jQuery('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                    $(".entry-content pre").show();
+                });
+
+                jQuery('.entry-content pre code').mouseenter(function(e) {
+                    var t = jQuery(this);
+                    t.children(".re_clip-board").slideDown(100);
+                    jQuery(e.target).mouseleave(function() {
+                        t.children(".re_clip-board").slideUp(100);
+
+                        setTimeout(function() {
+                            t.children(".re_clip-board").text("Copy");
+                        }, 100);
+
+                    });
+                });
+
+                jQuery('.entry-content pre code .re_clip-board').click(function(e) {
+                    re_copyToClipboard(jQuery(this));
+                    $(this).text("Copied!");
+                    $(this).css("width", "85px");
+                });
+            });
+
+            function re_copyToClipboard(element) {
+                var elements = element.parent();
+                var $temp = $("<textarea>");
+                $("body").append($temp);
+                var text = $(elements).text().replace(/Copy/g, "");
+                $temp.val(text).select();
+                document.execCommand("copy");
+                $temp.remove();
+            }
+
+            /*Starting expand widget jquery codes */
+            var rotation = 0;
+            jQuery.fn.plus_rotate = function(degrees) {
+                $(this).css({
+                    "-webkit-transform": "rotate(" + degrees + "deg)",
+                    "-moz-transform": "rotate(" + degrees + "deg)",
+                    "-ms-transform": "rotate(" + degrees + "deg)",
+                    "transform": "rotate(" + degrees + "deg)"
+                });
+                return $(this);
+            };
+
+            $(document).ready(function() {
+                $(".expand_widget_title").click(function() {
+                    if (!$(this).parent().children("ul").is(":visible")) {
+                        rotation += 360;
+                        $(this).children(".widget_plus_icon").removeClass("zero_six_rotate");
+                        $(this).children(".widget_plus_icon").addClass("tree_six_rotate");
+                        $(this).parent().children("ul").slideDown(390);
+
+                        var t = $(this);
+                        setTimeout(function() {
+                            t.children(".widget_plus_icon").removeClass("plus_icon");
+                            t.children(".widget_plus_icon").addClass("minus_icon");
+                        }, 400);
+                    } else {
+                        rotation -= 360;
+                        $(this).children(".widget_plus_icon").removeClass("tree_six_rotate");
+                        $(this).children(".widget_plus_icon").addClass("zero_six_rotate");
+                        $(this).parent().children("ul").slideUp(390);
+
+                        var t = $(this);
+                        setTimeout(function() {
+                            t.children(".widget_plus_icon").removeClass("minus_icon");
+                            t.children(".widget_plus_icon").addClass("plus_icon");
+                        }, 400);
+                    }
+                });
+            });
+
+            /*Ending expand widget jquery codes */
+        </script>
+        <link rel='stylesheet' id='dwpb_style-css' href='https://cdn.journaldev.com/wp-content/plugins/dw-promobar/assets/css/main.css' type='text/css' media='all' />
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/anti-spam/js/anti-spam-5.2.js'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var tocplus = {
+                "smooth_scroll": "1",
+                "visibility_show": "show",
+                "visibility_hide": "hide",
+                "width": "Auto",
+                "smooth_scroll_offset": "60"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/table-of-contents-plus/front.min.js'></script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/comment-reply.min.js'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var q2w3_sidebar_options = [{
+                "sidebar": "sidebar",
+                "margin_top": 10,
+                "margin_bottom": 0,
+                "stop_id": "",
+                "screen_max_width": 1024,
+                "screen_max_height": 120,
+                "width_inherit": false,
+                "refresh_interval": 1500,
+                "window_load_hook": false,
+                "disable_mo_api": false,
+                "widgets": ["text-10"]
+            }];
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js'></script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/wp-embed.min.js'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var dwpb = {
+                "timeleft": "249335",
+                "reset_cookie": "8"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/dw-promobar/assets/js/vendor/jquery.countdown.js'></script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/dw-promobar/assets/js/vendor/jquery.cookie.js'></script>
+        <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/dw-promobar/assets/js/main.js'></script>
+        <style>
+            @font-face {
+                font-family: "0";
+                src: url('');
+            }
+            #dwpb {
+                font-family: 0;
+            }
+            #dwpb,
+            .dwpb-action {
+                background-color: #f7682c;
+            }
+            #dwpb,
+            .dwpb-action,
+            body.dwpb-allow-close.dwpb-open .dwpb-close {
+                color: #fff;
+            }
+            #dwpb {
+                font-size: 16px;
+            }
+            #dwpb {
+                border-width: 0;
+            }
+            #dwpb a {
+                color: #ffffff;
+            }
+            #dwpb .dwpb-button {
+                background-color: #096abf;
+            }
+        </style>
+
+        <div id="dwpb" class=" fixtop ">
+            <div class="dwpb-inner">
+
+                <div class="dwpb-message hide">
+                    <span class="dwpb-content">[Flash Sale] Java Interview Questions Course at Lowest Price</span>
+                    <a class="dwpb-button" href="https://www.journaldev.com/45f6 " target="_blank" " >Check Out Now</a>				</div>
+					
+				<div class="dwpb-countdown ">
+					<div class="dwpb-counter "></div>
+					<span class="dwpbcd-content ">[Back to School Sale] Udemy Courses at $9.99/INR 640 Only</span>
+					 <a class="dwpb-button " href="https://www.journaldev.com/udemy-best-deal " target="_self "">Check Out Now!</a>
+                </div>
+            </div>
+        </div>
+        <span class="dwpb-action"></span>
+        <script src="https://cdn.journaldev.com/min/lazyload.js"></script>
+    </body>
+</html>
