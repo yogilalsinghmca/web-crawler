@@ -31,12 +31,13 @@ public class WebCrawlerApplication {
         
         // step 3. download html files from web       
         List<String> libraries = libExtractor.GetJavaScriptLibraries(htmlDocs);
-        System.out.println(libraries);
+        //System.out.println(libraries);
         //Step 5 get top five used libraries
         
         List<String> topFiveLib = TopFivePopularLibraryFinder.findTopNLibraries(libraries, 5);
         // print top 5 libraries on console 
-        System.out.println("---------TOP 5 Libraries------ ");
+        System.out.println("---------TOP 5 Libraries Names------ ");
         System.out.println(topFiveLib);
+        System.out.println("------------------------------------ ");
 	}
 }
