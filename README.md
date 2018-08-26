@@ -13,5 +13,5 @@ The command-line program should do the following:
 2. Extract the zip file
 3. Go to folder containing file "pom.xml" for example .../web-crawler-master/Web-crawler/
 4. Build the project using maven command "mvn clean package"
-5. Execute jar(without quote) using command 'java -jar target/Web-crawler-0.0.1-SNAPSHOT.jar sacala'
+5. Execute jar(without quote) using command 'java -jar target/Web-crawler-0.0.1-SNAPSHOT.jar scala'
 
