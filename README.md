@@ -9,7 +9,7 @@ The command-line program should do the following:
 3) Download the respective pages and extract the names of javascript libraries used in them
 4) Print top 5 most used libraries to standard output
 # how to test
-1. visit URL: https://github.com/yogilalsinghmca/web-crawler to download to clone
+1. visit URL: https://github.com/yogilalsinghmca/web-crawler to download or clone the project
 2. Extract the zip file
 3. Go to folder containing file "pom.xml" for example .../web-crawler-master/Web-crawler/
 4. Build the project using maven command "mvn clean package"
