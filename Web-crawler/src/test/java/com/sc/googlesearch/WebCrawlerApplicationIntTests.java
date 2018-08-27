@@ -28,7 +28,7 @@ public class WebCrawlerApplicationIntTests {
         List<String> urls = urlExtractor.extractGoogleSearchResultURL(query);
         
         // step 2. get the pages from URLs and extract used libraries in the page
-        List<Document> htmlDocs = HTMLFileDownLoader.downlaodHTLFiles(urls);
+        List<Document> htmlDocs = HTMLFileDownLoader.downlaodHTMLFiles(urls);
         // step 3. download HTML files from web
        
         List<String> libraries = libExtractor.GetJavaScriptLibraries(htmlDocs);

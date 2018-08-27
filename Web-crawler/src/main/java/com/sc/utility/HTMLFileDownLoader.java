@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HTMLFileDownLoader {
 
-    public static List<Document> downlaodHTLFiles(List<String> htmlFileURLs){
+    public static List<Document> downlaodHTMLFiles(List<String> htmlFileURLs){
         List<Document> htmlDocuments = new ArrayList<>();
         for(String htmlURL :htmlFileURLs){
             try {

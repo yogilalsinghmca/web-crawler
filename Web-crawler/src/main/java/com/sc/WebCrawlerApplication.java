@@ -27,7 +27,7 @@ public class WebCrawlerApplication {
         
         // step 2. get the pages from URLs and extract used libraries in the page
         JavaScriptLibExtractor libExtractor = context.getBean("javaScriptLibExtractor",JavaScriptLibExtractor.class);
-        List<Document> htmlDocs = HTMLFileDownLoader.downlaodHTLFiles(urls);
+        List<Document> htmlDocs = HTMLFileDownLoader.downlaodHTMLFiles(urls);
         
         // step 3. download html files from web       
         List<String> libraries = libExtractor.GetJavaScriptLibraries(htmlDocs);
